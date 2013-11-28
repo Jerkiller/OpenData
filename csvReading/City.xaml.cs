@@ -35,6 +35,8 @@ namespace csvReading
             Istat.Text = dati.CodiceIstat.ToString();
             NumAbitanti.Text = dati.PopolazioneMedia.ToString();
             Comune.Text = dati.Comune;
+            Morti.Text = dati.Morti.ToString();
+            Nati.Text = dati.NatiVivi.ToString();
         }
 
 

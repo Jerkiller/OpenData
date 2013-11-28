@@ -28,11 +28,18 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <ListBox Height="335" Margin="10,10,10,0" VerticalAlignment="Top">
-                <ListBoxItem><Button Content="Mira" BorderBrush="{x:Null}" Background="{x:Null}" Width="436" /></ListBoxItem>
-                <ListBoxItem><Button Content="Mirano" BorderBrush="{x:Null}" Background="{x:Null}" Width="436" Click="Button_Click" /></ListBoxItem>
-            </ListBox>
+            <ListBox Name="ListaComuni" Height="335" Margin="10,10,10,0" VerticalAlignment="Top">
+                <ListBoxItem>
+                    <Button Content="Mirano" BorderBrush="{x:Null}" Background="{x:Null}" Width="436" Click="Button_Click" />
+                </ListBoxItem>
 
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Button Content="ciao" Tag="ciao" BorderBrush="{x:Null}" Background="{x:Null}" Width="436" FontSize="20" FontFamily="Segoe WP Light" Click="Button_Click" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+
+            </ListBox>
         </Grid>
     </Grid>
 

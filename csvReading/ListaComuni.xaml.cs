@@ -12,9 +12,14 @@ namespace csvReading
 {
     public partial class ListaComuni : PhoneApplicationPage
     {
+        List<string> comuni;
+        List<int> codici;
+
+
         public ListaComuni()
         {
             InitializeComponent();
+            caricaComuni();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -23,5 +28,26 @@ namespace csvReading
             string idComune = "27024";
             NavigationService.Navigate(new Uri("/City.xaml?comune="+idComune.ToString(), UriKind.Relative));
         }
+
+
+
+        public void caricaVenezia()
+        {
+            //carica una lista di bottoni in ListaComuni
+        }
+
+        public void caricaComuni()
+        {
+            codici = CsvReader.Instance.caricaIstat();
+            comuni = CsvReader.Instance.caricaComuni();
+            
+            //debug sesion
+            /*
+            string s = "";
+            foreach (string y in comuni){s = s+y+" ";}
+            MessageBox.Show(comuni.Count.ToString()+" ecco i comuni:\n\n"+s);
+            */
+        }
+
     }
 }

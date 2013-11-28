@@ -48,6 +48,13 @@
 
             <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="10,0,10,10" TextWrapping="Wrap" Name="Istat" FontSize="40"/>
             <TextBlock Grid.Row="1" Grid.Column="1" Margin="10" TextWrapping="Wrap" Name="NumAbitanti" FontSize="30"/>
+            <TextBlock Name="Nati"  Grid.Column="1" Margin="10" Grid.Row="2" TextWrapping="Wrap"/>
+            <TextBlock Name="Morti" Grid.Column="1" Margin="10" Grid.Row="3" TextWrapping="Wrap"/>
+            <TextBlock Name="Boh"  Grid.Column="1" Margin="10" Grid.Row="4" TextWrapping="Wrap"/>
+
+            
+            
+            
             <Button Grid.Column="2" Margin="10,10,0,10" Grid.Row="1" BorderBrush="{x:Null}" Click="Button_Click" Foreground="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="/Images/graph.png" Stretch="Uniform">
@@ -57,7 +64,7 @@
                     </ImageBrush>
                 </Button.Background>
             </Button>
-
+            
 
         </Grid>
     </Grid>

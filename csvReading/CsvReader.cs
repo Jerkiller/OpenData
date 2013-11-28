@@ -11,13 +11,12 @@ namespace csvReading
     {
 
     private static CsvReader instance = null;
-    public List<Record> datasheet;
+
 
     
 
     private CsvReader()
     {
-        datasheet = new List<Record>();
     }
 
     public static CsvReader Instance
@@ -39,10 +38,9 @@ namespace csvReading
 
 
 
-
-        public void Load(int comune)
+        public Record LoadLastData(int comune)
         {
-            datasheet.Clear();
+            Record dati = null;
             try
             {
 
@@ -60,42 +58,18 @@ namespace csvReading
                             string line;
                             myStreamReader.ReadLine(); //spreco intestazione
 
-                            /* Un po' di debug
-                            myStreamReader.ReadLine();
-                            myStreamReader.ReadLine();
-                            myStreamReader.ReadLine();
-                            line = myStreamReader.ReadLine();
-                            datasheet.Add(new Record(SplitLine(line)));
-                            line = myStreamReader.ReadLine();
-                            datasheet.Add(new Record(SplitLine(line)));
-                            myStreamReader.ReadLine();
-                            myStreamReader.ReadLine();
-                            line = myStreamReader.ReadLine();
-                             * */
-                           
+ 
 
-
-
-
-                            //Trova tutti i record con comune e anno ivi specificati
-                            //int cont = 0;
+                            //Trova tutti i record con comune e anno ivi specificati, scrivi sempre i dati sullo stesso oggetto
                             line = myStreamReader.ReadLine();
                             while ((line = myStreamReader.ReadLine()) != null)
                             {
-                                //cont++;
-
                                 //substring ha come argomenti il carattere giusto prima e la lungh della sottostringa
                                 if (/*(line.Substring(0, 4) == "2003") &&*/ (line.Substring(5, 5) == comune.ToString()))
                                 {
-                                    datasheet.Add(new Record(SplitLine(line)));
+                                    dati=new Record(SplitLine(line));
                                 }
                             }
-                            //MessageBox.Show("Ho controllato in "+cont+" record diversi!!!");
-
-
-
-
-
                         }
                     }
                 }
@@ -109,14 +83,15 @@ namespace csvReading
                 Console.WriteLine(e.Message);
             }
 
-
+            return dati;
         }
 
 
 
 
 
-
+        /// <returns>Una lista di interi a tre a tre costituiti da anno, num abitanti, e un delimitatore=0
+        /// es. 1990 23435 0 1991 24123 0 ...</returns>
         public List<int> LoadPopolazione(int comune)
         {
             List<int> listaPopolazione = new List<int>();
@@ -201,5 +176,10 @@ namespace csvReading
             foreach (string s in elements) line.Add(s);
             return line;
         }
+
+
+
+
+
     }
 }

@@ -23,7 +23,8 @@ namespace csvReading
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Graph.xaml",UriKind.Relative));
+            //gestisco via get che comune visualizzare
+            NavigationService.Navigate(new Uri("/ListaComuni.xaml",UriKind.Relative));
         }
 
         

@@ -1,80 +1,98 @@
 ﻿using Microsoft.Phone.Controls;
-using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-using System;
 using System;
 using System.Collections.Generic;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq;
-using System.Net;
-using System.Net;
-using System.Windows;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 namespace csvReading
 {
     public partial class Graph : PhoneApplicationPage
     {
+        int max = 0;
+        int min = int.MaxValue;
+        int idComune;
+        Record comune = null;
+        CsvReader csv = CsvReader.Instance;
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            string codice;
+            // recupero il comune di cui cercare il tutto
+            if (NavigationContext.QueryString.TryGetValue("comune", out codice))
+            {
+                idComune = Int32.Parse(codice);
+
+                comune = csv.LoadLastData(idComune);
+            }
+            else { idComune = 25011; }
+
+            //imposta punti grafico
+            Grafico.Points = calcolaPunti();
+            //imposta titolo pagina
+            PageTitle.Text = comune.Comune;
+            if (comune.Comune.Length > 9) PageTitle.FontSize = 50;
+        }
+
+        public PointCollection calcolaPunti() {
+            List<int> pop = csv.LoadPopolazione(idComune);
+
+            PointCollection listaPunti = new PointCollection();
+            double coordX = 0;
+            double coordY = 0;
+
+
+            for (int w = 1; w < pop.Count; w += 3)
+            {
+                if (pop[w] < min) min = pop[w];
+                if (pop[w] > max) max = pop[w];
+            }
+            double range = max - min;
+            double fattoreScala = double.Parse("440") / range;
+            // MessageBox.Show("Il massimo valore e' " + max + ", il minimo è " + min + "\nMentre il range usato è " + range+". Fattore di scala è "+fattoreScala.ToString());
+
+
+            for (int y = 0; y < pop.Count; y++)
+            {
+
+                if (y % 3 == 0)
+                {
+
+                    int anno = pop[y];
+                    int z = y / 3;
+                    coordX = 40 * z;
+                }
+
+                if (y % 3 == 1)
+                {
+
+                    double value = (pop[y] - min) * fattoreScala;
+                    coordY = 300 - value;
+                    Point z = new Point(coordX, coordY);
+                    listaPunti.Add(z);
+
+                }
+                if (y % 3 == 2)
+                {
+                    //do nothing
+                }
+            }
+            /* Codice che serve a selezionare solo gli ultimi 12 anni..
+            PointCollection s = new PointCollection();
+            for (int w=0; w < listaPunti.Count; w++)
+            {
+                if (w >= (listaPunti.Count - 12)) s.Add(listaPunti[w]);
+            }
+            return s;*/
+            return listaPunti;
+        }
+
         public Graph()
         {
             InitializeComponent();
-            CsvReader csv = CsvReader.Instance;
-            csv.Load(27024);
-            csv.datasheet[1].PrintRecord();
-            csv.datasheet[7].PrintRecord();
-
-            string popolazioniMirano = "";
-            List<int> pop = csv.LoadPopolazione(24012);
-
-            PointCollection listaPunti = new PointCollection();
-            int coordX=0;
-            int coordY=0;
-            int ordine=1;
-            for (int y = 0; y < pop.Count ;y++)
-                {
-                
-                    if(y%3==0)
-                    {
-                        int anno=pop[y];
-                        int z = y / 3;
-                        coordX=40*z;
-                    }
-
-                    if (y == 1) { ordine = pop[y] / 1000; }
-
-                    if(y%3==1)
-                    {
-                        int value = (pop[y] - 1000 * ordine)/8;
-                        coordY = 360-value;
-                        Point z = new Point(coordX,coordY);
-                        //MessageBox.Show(coordY.ToString());
-                        listaPunti.Add(z);
-
-                    }
-                    if(y%3==2)
-                    {
-                       //do nothing
-                    }
-
-                    popolazioniMirano += (pop[y].ToString() + "\t");
-                }
-
-            Grafico.Points = listaPunti;
-            Popo.Text = popolazioniMirano;
-
-            //foreach (Record h in csv.datasheet) h.PrintRecord();
-
-            //csv.Load(26021);
-            //foreach (Record h in csv.datasheet) h.PrintRecord();
         }
 
     }

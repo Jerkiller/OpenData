@@ -12,7 +12,7 @@ namespace csvReading
 {
     public partial class City : PhoneApplicationPage
     {
-        int idComune=27011;
+        int idComune;
 
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -37,6 +37,9 @@ namespace csvReading
             Comune.Text = dati.Comune;
             Morti.Text = dati.Morti.ToString();
             Nati.Text = dati.NatiVivi.ToString();
+            Anno.Text = "Dati aggiornati al " + dati.Anno.ToString();
+            Immigrati.Text = dati.Iscritti.ToString();
+            Emigrati.Text = dati.Cancellati.ToString();
         }
 
 
@@ -45,10 +48,16 @@ namespace csvReading
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Abitanti_Click(object sender, RoutedEventArgs e)
         {
             //gestisco via get che dato e di che comune visualizzare
-            NavigationService.Navigate(new Uri("/Graph.xaml?comune="+idComune.ToString(), UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Graph.xaml?dato=popolazione&comune="+idComune.ToString(), UriKind.Relative));
         }
+        private void Nati_Click(object sender, RoutedEventArgs e)
+        {
+            //gestisco via get che dato e di che comune visualizzare
+            NavigationService.Navigate(new Uri("/Graph.xaml?dato=nati&comune=" + idComune.ToString(), UriKind.Relative));
+        }
+
     }
 }

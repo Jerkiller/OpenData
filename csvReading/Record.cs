@@ -70,5 +70,32 @@ namespace csvReading
                 + "PopInizio: " + PopolazioneInizioAnno + "\n" + "PopFine: " + PopolazioneFineAnno + "\n" + "Popmedia: " + PopolazioneMedia + "\n\n"
                 + "Nati: " + NatiVivi + "\n" + "Morti: " + Morti + "\n" + "Iscritti: " + Iscritti + "\n" + "Cancellati: " + Cancellati);
         }
+
+
+    /// <returns>La somma dei dati di due record ()utile perché alcuni record sono divisi dal sesso</returns>
+    public Record somma(Record altro){
+        string a = (PopolazioneInizioAnno + altro.PopolazioneInizioAnno).ToString();
+        string b = (PopolazioneFineAnno + altro.PopolazioneFineAnno).ToString();
+        string c = (PopolazioneMedia + altro.PopolazioneMedia).ToString();
+        string d = (Morti + altro.Morti).ToString();
+        string e = (NatiVivi + altro.NatiVivi).ToString();
+        string f = (Iscritti + altro.Iscritti).ToString();
+        string g = (Cancellati + altro.Cancellati).ToString();
+        List<string> amen = new List<string>();
+        amen.Add(Anno.ToString());
+        amen.Add(CodiceIstat.ToString());
+        amen.Add(Comune);
+        amen.Add(Sesso);
+        amen.Add(a);
+        amen.Add(e);
+        amen.Add(d);
+        amen.Add(f);
+        amen.Add(g);
+        amen.Add(b);
+        amen.Add(c);
+        return new Record(amen);
+    }
+
+
     }
 }

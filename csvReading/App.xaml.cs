@@ -12,11 +12,34 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using csvReading.ViewModel;
 
 namespace csvReading
 {
     public partial class App : Application
     {
+
+
+
+        private static ComuniVM viewModel = null;
+
+        /// <summary>
+        /// A static ViewModel used by the views to bind against.
+        /// </summary>
+        /// <returns>The MainViewModel object.</returns>
+        public static ComuniVM ViewModel
+        {
+            get
+            {
+                // Delay creation of the view model until necessary
+                if (viewModel == null)
+                    viewModel = new ComuniVM();
+
+                return viewModel;
+            }
+        }
+
+
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
         /// </summary>

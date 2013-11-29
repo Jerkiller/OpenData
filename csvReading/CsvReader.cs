@@ -40,9 +40,11 @@ namespace csvReading
 
 
 
+        /// <returns>L'ultimo record temporale di un comune</returns>
         public Record LoadLastData(int comune)
         {
-            Record dati = null;
+            Record ultimo = null;
+            Record penultimo = null;
             try
             {
 
@@ -59,17 +61,16 @@ namespace csvReading
 
                             string line;
                             myStreamReader.ReadLine(); //spreco intestazione
-
- 
-
+                            
                             //Trova tutti i record con comune e anno ivi specificati, scrivi sempre i dati sullo stesso oggetto
                             line = myStreamReader.ReadLine();
                             while ((line = myStreamReader.ReadLine()) != null)
                             {
                                 //substring ha come argomenti il carattere giusto prima e la lungh della sottostringa
-                                if (/*(line.Substring(0, 4) == "2003") &&*/ (line.Substring(5, 5) == comune.ToString()))
+                                if (line.Substring(5, 5) == comune.ToString())
                                 {
-                                    dati=new Record(SplitLine(line));
+                                    if(ultimo!=null)penultimo = ultimo;
+                                    ultimo = new Record(SplitLine(line));
                                 }
                             }
                         }
@@ -84,13 +85,139 @@ namespace csvReading
                 Console.WriteLine("The file could not be read:");
                 Console.WriteLine(e.Message);
             }
-
-            return dati;
+            if (ultimo.Sesso == "Non rilevato") return ultimo;
+            return penultimo.somma(ultimo);
         }
 
+        /// <returns>Una lista di record di tale comune</returns>
+        public List<Record> LoadRecord(int comune) {
+            List<Record> dati = new List<Record>();
+            try
+            {
+
+                var ResourceStream = Application.GetResourceStream(new Uri("file.txt", UriKind.Relative));
+
+                if (ResourceStream != null)
+                {
+                    using (Stream myFileStream = ResourceStream.Stream)
+                    {
+                        if (myFileStream.CanRead)
+                        {
+                            StreamReader myStreamReader = new StreamReader(myFileStream);
+                            string line;
+                            myStreamReader.ReadLine(); //spreco intestazione
+
+                            line = myStreamReader.ReadLine();
+                            while ((line = myStreamReader.ReadLine()) != null)
+                            {
+                                //substring ha come argomenti il carattere giusto prima e la lungh della sottostringa
+                                if (line.Substring(5, 5) == comune.ToString())
+                                {
+                                    dati.Add(new Record(SplitLine(line)));
+                                }
+                            }
+                            //ho scorso tutti i valori
+                        }
+                    }
+                }
+            }
+
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message + "\n\n" + e.Data + "\n\n" + e.StackTrace);
+                // Let the user know what went wrong.
+                Console.WriteLine("The file could not be read:");
+                Console.WriteLine(e.Message);
+            }
+
+            return dati;
+
+        
+        }
+
+        /// <returns>Data una lista di record restituisce una lista
+        /// con un record per anno con i dati dei due sessi sommati</returns>
+        public List<Record> AggregaSessi(List<Record> lista)
+        {
+            Record primoVal = null;
+            List<Record> listaAggregata = new List<Record>();
+
+            for(int w=0;w<lista.Count;w++)
+            {
+                if(((lista[w].Sesso=="Femmina") ||(lista[w].Sesso=="Femmina"))&&(primoVal == null))
+                {
+                    primoVal = lista[w];
+                    continue;
+                }
+
+                if(((lista[w].Sesso=="Femmina") ||(lista[w].Sesso=="Femmina"))&&(primoVal != null))
+                {
+                    listaAggregata.Add(primoVal.somma(lista[w]));
+                    primoVal = null;
+                }
+
+                if (lista[w].Sesso == "Non rilevato")
+                {
+                    listaAggregata.Add(lista[w]);
+                }
+            }//end for
+            return listaAggregata;
+        }
+
+        /// <returns>Una lista di interi a tre a tre costituiti da anno, num abitanti, e un delimitatore=0
+        /// es. 1990 23435 0 1991 24123 0 ...</returns>
+        public List<int>[] LoadDati(int comune, string dato)
+        {
+            List<int> listaValori = new List<int>();
+            List<int> listaAnni = new List<int>();
+            
+            List<Record> dati = LoadRecord(comune);
+            List<Record> datiAggregati = AggregaSessi(dati);
 
 
+            //riempi listaAnni
+            foreach (Record w in datiAggregati) listaAnni.Add(w.Anno);
 
+            //riempi listaValori
+            switch (dato)
+            {
+                case ("popolazione"): {
+                    foreach(Record w in datiAggregati)
+                    listaValori.Add(w.PopolazioneMedia); break;
+                }
+                case ("nati"):
+                    {
+                        foreach (Record w in datiAggregati)
+                            listaValori.Add(w.NatiVivi); break;
+                    }
+                case ("morti"):
+                    {
+                        foreach (Record w in datiAggregati)
+                            listaValori.Add(w.Morti); break;
+                    }
+                case ("iscritti"):
+                    {
+                        foreach (Record w in datiAggregati)
+                            listaValori.Add(w.Iscritti); break;
+                    }
+                case ("cancellati"):
+                    {
+                        foreach (Record w in datiAggregati)
+                            listaValori.Add(w.Cancellati); break;
+                    }
+                default:
+                    {
+                        MessageBox.Show("Errore nel caricamento del dato"); break;
+                    }
+            }
+
+            //compongo l'array di 2 liste valori/anni
+            List<int>[] array = new List<int>[2];
+            array[0] = listaValori;
+            array[1] = listaAnni;
+            return array;
+
+        }
 
         /// <returns>Una lista di interi a tre a tre costituiti da anno, num abitanti, e un delimitatore=0
         /// es. 1990 23435 0 1991 24123 0 ...</returns>

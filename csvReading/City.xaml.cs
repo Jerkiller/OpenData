@@ -58,6 +58,22 @@ namespace csvReading
             //gestisco via get che dato e di che comune visualizzare
             NavigationService.Navigate(new Uri("/Graph.xaml?dato=nati&comune=" + idComune.ToString(), UriKind.Relative));
         }
+        private void Morti_Click(object sender, RoutedEventArgs e)
+        {
+            //gestisco via get che dato e di che comune visualizzare
+            NavigationService.Navigate(new Uri("/Graph.xaml?dato=morti&comune=" + idComune.ToString(), UriKind.Relative));
+        }
+        private void Immigrati_Click(object sender, RoutedEventArgs e)
+        {
+            //gestisco via get che dato e di che comune visualizzare
+            NavigationService.Navigate(new Uri("/Graph.xaml?dato=iscritti&comune=" + idComune.ToString(), UriKind.Relative));
+        }
+        private void Emigrati_Click(object sender, RoutedEventArgs e)
+        {
+            //gestisco via get che dato e di che comune visualizzare
+            NavigationService.Navigate(new Uri("/Graph.xaml?dato=cancellati&comune=" + idComune.ToString(), UriKind.Relative));
+        }
+        
 
     }
 }

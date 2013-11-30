@@ -30,7 +30,6 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
             <Canvas Name="Caneva" Height="360" ScrollViewer.HorizontalScrollBarVisibility="Visible" VerticalAlignment="Top">
                 <Canvas.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -39,6 +38,7 @@
                     </LinearGradientBrush>
                 </Canvas.Background>
 
+                    
                 <!--Grafico-->
                 <Polyline Name="Grafico" StrokeStartLineCap="Round" Points="0 100, 40  150, 80 110, 120 200, 160 150, 200 110, 240 140, 280 250, 320 142, 360 150, 400 250, 440  50" Stroke="Blue" StrokeThickness="5" />
 

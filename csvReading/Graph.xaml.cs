@@ -122,14 +122,14 @@ namespace csvReading
 
             double range = Max() - Min();
             
-            for (int w = 7; w < valori.Count; w++)
+            for (int w = 3; w < valori.Count; w++)
             {
                 //Calcolo ascisse
-                coordX = larghezzaGriglia * (w-7);
+                coordX = larghezzaGriglia * (w-3);
 
                 //Calcolo ordinate
                 double invertito = (valori[w]-Min())* altezzaCanvas / range;
-                double value = altezzaCanvas - invertito;
+                double value = altezzaCanvas - invertito*0.8;
                 coordY = 300 - value;
                 Point z = new Point(coordX, coordY);
                 listaPunti.Add(z);

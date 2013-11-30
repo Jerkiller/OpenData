@@ -37,9 +37,68 @@ namespace csvReading
             Comune.Text = dati.Comune;
             Morti.Text = dati.Morti.ToString();
             Nati.Text = dati.NatiVivi.ToString();
-            Anno.Text = "Dati aggiornati al " + dati.Anno.ToString();
+            Anno.Text = "Dati aggiornati al " + dati.Anno;
             Immigrati.Text = dati.Iscritti.ToString();
             Emigrati.Text = dati.Cancellati.ToString();
+
+            int istat = dati.CodiceIstat/1000;
+            int anno = dati.Anno;
+            int abitanti = CsvReader.Instance.AbitantiProvincia(istat, anno);
+            //MessageBox.Show("Abitati in provincia: "+abitanti.ToString());
+            double popol = (double)(dati.PopolazioneMedia);
+            double percent = 100*popol/(double)abitanti;
+            double percentuale = Math.Round(percent,2);
+            //imposto articolo per la percentuale
+            string articolo = "il ";
+            if(percentuale<1)articolo = "lo ";
+            if(percentuale<2&&percentuale>=1)articolo="l'";
+            if(percentuale<9&&percentuale>=8)articolo="l'";
+            if(percentuale<12&&percentuale>=11)articolo="l'";
+
+            int codProv = (dati.CodiceIstat)/1000;
+            string provincia = "";
+#region switch
+            switch (codProv)
+        {
+            case (23):
+                {
+                    provincia = "Verona";
+                    break;
+                }
+            case (24):
+                {
+                    provincia = "Vicenza";
+                    break;
+                }
+            case (25):
+                {
+                    provincia = "Belluno";
+                    break;
+                }
+            case (26):
+                {
+                    provincia = "Treviso";
+                    break;
+                }
+            case (27):
+                {
+                    provincia = "Venezia";
+                    break;
+                }
+            case (28):
+                {
+                    provincia = "Padova";
+                    break;
+                }
+            case (29):
+                {
+                    provincia = "Rovigo";
+                    break;
+                }
+        }
+#endregion
+
+            Percentuale.Text="Cioè "+articolo+percentuale+"% della provincia di "+provincia+".";
         }
 
 
@@ -48,6 +107,7 @@ namespace csvReading
             InitializeComponent();
         }
 
+        #region gestione click pulsanti del grafico
         private void Abitanti_Click(object sender, RoutedEventArgs e)
         {
             //gestisco via get che dato e di che comune visualizzare
@@ -73,7 +133,7 @@ namespace csvReading
             //gestisco via get che dato e di che comune visualizzare
             NavigationService.Navigate(new Uri("/Graph.xaml?dato=cancellati&comune=" + idComune.ToString(), UriKind.Relative));
         }
-        
+        #endregion
 
     }
 }

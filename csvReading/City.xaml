@@ -41,27 +41,29 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <!--Prima colonna-->
-            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  Margin="10" TextWrapping="Wrap" Name="Anno"  Text="Dati aggiornati"/>
-            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" TextWrapping="Wrap" Text="Cod. Istat" FontSize="30"/>
-            <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" TextWrapping="Wrap" Text="Abitanti" FontSize="30"/>
-            <TextBlock Grid.Row="3" Grid.Column="0" Margin="10" TextWrapping="Wrap" Text="Nati" FontSize="30" />
-            <TextBlock Grid.Row="4" Grid.Column="0" Margin="10" TextWrapping="Wrap" Text="Morti" FontSize="30"/>
-            <TextBlock Grid.Row="5" Grid.Column="0" Margin="10" TextWrapping="Wrap" Text="Immigrati" FontSize="30"/>
-            <TextBlock Grid.Row="6" Grid.Column="0" Margin="10" TextWrapping="Wrap" Text="Emigrati" FontSize="30"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  Margin="10,0" TextWrapping="Wrap" Name="Anno"  Text="Dati aggiornati" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10,0" TextWrapping="Wrap" Text="Cod. Istat" FontSize="30" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Margin="10,0" TextWrapping="Wrap" Text="Abitanti" FontSize="30" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="10,0" TextWrapping="Wrap" Name="Percentuale" Text="di cui..." FontSize="22" VerticalAlignment="Center" />
+            <TextBlock Grid.Row="4" Grid.Column="0" Margin="10,0" TextWrapping="Wrap" Text="Nati" FontSize="30" VerticalAlignment="Center" />
+            <TextBlock Grid.Row="5" Grid.Column="0" Margin="10,0" TextWrapping="Wrap" Text="Morti" FontSize="30" VerticalAlignment="Center" />
+            <TextBlock Grid.Row="6" Grid.Column="0" Margin="10,0" TextWrapping="Wrap" Text="Immigrati" FontSize="30" VerticalAlignment="Center" />
+            <TextBlock Grid.Row="7" Grid.Column="0" Margin="10,0" TextWrapping="Wrap" Text="Emigrati" FontSize="30" VerticalAlignment="Center" />
 
             <!--Seconda colonna-->
-            <TextBlock Grid.Row="0" Grid.Column="1" Margin="10" TextWrapping="Wrap" />
-            <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="10,0,10,10" TextWrapping="Wrap" Name="Istat" FontSize="30"/>
-            <TextBlock Grid.Row="2" Grid.Column="1" Margin="10" TextWrapping="Wrap" Name="NumAbitanti" FontSize="30"/>
-            <TextBlock Name="Nati"  Grid.Column="1" Margin="10" Grid.Row="3" TextWrapping="Wrap" FontSize="30"/>
-            <TextBlock Name="Morti" Grid.Column="1" Margin="10" Grid.Row="4" TextWrapping="Wrap" FontSize="30"/>
-            <TextBlock Name="Immigrati"  Grid.Column="1" Margin="10" Grid.Row="5" TextWrapping="Wrap" FontSize="30"/>
-            <TextBlock Name="Emigrati"  Grid.Column="1" Margin="10" Grid.Row="6" TextWrapping="Wrap" FontSize="30"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Margin="10,0" TextWrapping="Wrap" VerticalAlignment="Center" />
+            <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="10,0" TextWrapping="Wrap" Name="Istat" FontSize="30" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Margin="10,0" TextWrapping="Wrap" Name="NumAbitanti" FontSize="30" VerticalAlignment="Center"/>
+            <TextBlock Name="Nati"  Grid.Column="1" Margin="10,0" Grid.Row="4" TextWrapping="Wrap" FontSize="30" VerticalAlignment="Center"/>
+            <TextBlock Name="Morti" Grid.Column="1" Margin="10,0" Grid.Row="5" TextWrapping="Wrap" FontSize="30" VerticalAlignment="Center"/>
+            <TextBlock Name="Immigrati"  Grid.Column="1" Margin="10,0" Grid.Row="6" TextWrapping="Wrap" FontSize="30" VerticalAlignment="Center"/>
+            <TextBlock Name="Emigrati"  Grid.Column="1" Margin="10,0" Grid.Row="7" TextWrapping="Wrap" FontSize="30" VerticalAlignment="Center"/>
 
             <!--Terza colonna-->
-            <Button Grid.Column="2" Margin="10,10,0,10" Grid.Row="2" BorderBrush="{x:Null}" Click="Abitanti_Click" Foreground="{x:Null}">
+            <Button Grid.Column="2" Margin="0,-5" Grid.Row="2" BorderBrush="{x:Null}" Click="Abitanti_Click" Foreground="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="/Images/graph.png" Stretch="Uniform">
                         <ImageBrush.RelativeTransform>
@@ -70,7 +72,7 @@
                     </ImageBrush>
                 </Button.Background>
             </Button>
-            <Button Grid.Column="2" Margin="10,10,0,10" Grid.Row="3" BorderBrush="{x:Null}" Click="Nati_Click" Foreground="{x:Null}">
+            <Button Grid.Column="2" Margin="0,-5" Grid.Row="4" BorderBrush="{x:Null}" Click="Nati_Click" Foreground="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="/Images/graph.png" Stretch="Uniform">
                         <ImageBrush.RelativeTransform>
@@ -79,7 +81,7 @@
                     </ImageBrush>
                 </Button.Background>
             </Button>
-            <Button Grid.Column="2" Margin="10,10,0,10" Grid.Row="4" BorderBrush="{x:Null}" Click="Morti_Click" Foreground="{x:Null}">
+            <Button Grid.Column="2" Margin="0,-5" Grid.Row="5" BorderBrush="{x:Null}" Click="Morti_Click" Foreground="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="/Images/graph.png" Stretch="Uniform">
                         <ImageBrush.RelativeTransform>
@@ -88,7 +90,7 @@
                     </ImageBrush>
                 </Button.Background>
             </Button>
-            <Button Grid.Column="2" Margin="10,10,0,10" Grid.Row="5" BorderBrush="{x:Null}" Click="Immigrati_Click" Foreground="{x:Null}">
+            <Button Grid.Column="2" Margin="0,-5" Grid.Row="6" BorderBrush="{x:Null}" Click="Immigrati_Click" Foreground="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="/Images/graph.png" Stretch="Uniform">
                         <ImageBrush.RelativeTransform>
@@ -97,7 +99,7 @@
                     </ImageBrush>
                 </Button.Background>
             </Button>
-            <Button Grid.Column="2" Margin="10,10,0,10" Grid.Row="6" BorderBrush="{x:Null}" Click="Emigrati_Click" Foreground="{x:Null}">
+            <Button Grid.Column="2" Margin="0,-5" Grid.Row="7" BorderBrush="{x:Null}" Click="Emigrati_Click" Foreground="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="/Images/graph.png" Stretch="Uniform">
                         <ImageBrush.RelativeTransform>

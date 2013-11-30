@@ -37,7 +37,8 @@ namespace csvReading
         {
             double media = 0;
             foreach (int w in valori) media += w;
-            return (double)(media/(double)valori.Count);
+            media = (double)(media/(double)valori.Count);
+            return Math.Round(media,2);
         }
 
         public double Varianza()
@@ -45,17 +46,38 @@ namespace csvReading
             double media = Media();
             double var = 0;
             foreach (int w in valori) var = (w-media)*(w-media);
-            return (double)(var / (double)valori.Count);
+            var = (double)(var / (double)valori.Count);
+            return Math.Round(var, 2);
         }
+
+
+        /// <returns>l'anno in cui è avvenuta tale prima ricorrenza</returns>
+        public int Anno(int dato)
+        {
+            for (int w=0; w < valori.Count; w++)
+            {
+                if (valori[w] == dato)
+                {
+                    return anni[w];
+                }
+            }
+            return -1;
+        }
+
+
         public string Statistica()
         {
             string stat = "";
 
-            stat += "Massimo: " + Max().ToString() + "\n";
-            stat += "Minimo: " + Min().ToString() + "\n";
-            stat += "Range: " + (Max() - Min()).ToString() + "\n";
-            stat += "Media: " + Media() + "\n";
-            stat += "Varianza: " + Varianza() + "\n";
+            stat += "Massimo: " + Max().ToString();
+            int anno = Anno(Max());
+            if (anno > 0) { stat += " raggiunto nel " + anno; }
+            stat += "\nMinimo: " + Min().ToString();
+            anno = Anno(Min());
+            if (anno > 0) { stat += " raggiunto nel " + anno; }
+            stat += "\nRange: " + (Max() - Min()).ToString();
+            stat += "\nMedia: " + Media();
+            stat += "\nVarianza: " + Varianza();
 
             return stat;
         }
@@ -122,15 +144,14 @@ namespace csvReading
 
             double range = Max() - Min();
             
-            for (int w = 3; w < valori.Count; w++)
+            for (int w = 2; w < valori.Count; w++)
             {
                 //Calcolo ascisse
-                coordX = larghezzaGriglia * (w-3);
+                coordX = larghezzaGriglia * (w-2);
 
                 //Calcolo ordinate
                 double invertito = (valori[w]-Min())* altezzaCanvas / range;
-                double value = altezzaCanvas - invertito*0.8;
-                coordY = 300 - value;
+                coordY = altezzaCanvas - invertito * 0.8;
                 Point z = new Point(coordX, coordY);
                 listaPunti.Add(z);
             }

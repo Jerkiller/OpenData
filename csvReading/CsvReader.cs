@@ -36,9 +36,52 @@ namespace csvReading
 #endregion
 
 
+        /// <returns>Il numero di abitanti di tale provincia (cod istat) in tale anno</returns>
+        public int AbitantiProvincia(int codProv, int anno)
+        {
+            int contatore = 0;
+            try
+            {
+                var ResourceStream = Application.GetResourceStream(new Uri("file.txt", UriKind.Relative));
 
+                if (ResourceStream != null)
+                {
+                    using (Stream myFileStream = ResourceStream.Stream)
+                    {
 
+                        if (myFileStream.CanRead)
+                        {
+                            StreamReader myStreamReader = new StreamReader(myFileStream);
 
+                            string line;
+                            myStreamReader.ReadLine(); //spreco intestazione
+
+                            //Trova tutti i record con comune e anno ivi specificati, scrivi sempre i dati sullo stesso oggetto
+                            line = myStreamReader.ReadLine();
+                            while ((line = myStreamReader.ReadLine()) != null)
+                            {
+                                //substring ha come argomenti il carattere giusto prima e la lungh della sottostringa
+                                if ((line.Substring(0, 4) == anno.ToString()) && (line.Substring(5, 2) == codProv.ToString()))
+                                {
+                                    List<string> dato = new List<string>();
+                                    dato = SplitLine(line);
+                                    contatore += Parse(dato[10]);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message + "\n\n" + e.Data + "\n\n" + e.StackTrace);
+                // Let the user know what went wrong.
+                Console.WriteLine("The file could not be read:");
+                Console.WriteLine(e.Message);
+            }
+            return contatore;
+        }
 
         /// <returns>L'ultimo record temporale di un comune</returns>
         public Record LoadLastData(int comune)
@@ -298,6 +341,7 @@ namespace csvReading
         }
 
 
+        /// <returns>Una lista di stringhe date dall'esplosione della stringa principale</returns>
         public List<string> SplitLine(string csvLine)
         {
             List<string> line = new List<string>();
@@ -305,8 +349,6 @@ namespace csvReading
             foreach (string s in elements) line.Add(s);
             return line;
         }
-
-
 
 
         /// <returns>Una lista di interi con tutti i codici di tutti i comuni con lo stesso ordine
@@ -357,6 +399,7 @@ namespace csvReading
 
             return comuni;
 }
+
         public List<string> caricaComuni()
         {
             List<string> comuni = new List<string>();
@@ -404,10 +447,15 @@ namespace csvReading
 
             return comuni;
         }
-    
-    
-    
-    
-    
+
+        public int Parse(string numero)
+        {
+            numero.Trim('.');
+            List<string> a = (numero.Split('.')).ToList();
+            string z = "";
+            foreach (string h in a) z += h;
+            return Int32.Parse(z);
+        }
+
     }
 }

@@ -22,7 +22,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-           <TextBlock Text="Open Veneto" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="Open Veneto" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -67,6 +67,7 @@
                 </Button.RenderTransform>
             </Button>
             <Image HorizontalAlignment="Left" Height="486" VerticalAlignment="Top" Width="456" Source="/Images/veneto.png" Margin="10,-12,-10,0" Grid.RowSpan="2"/>
+            <Button Content="Open Data Veneto" Background="#FF0A3787" HorizontalAlignment="Left" Margin="10,172,0,0" Grid.Row="1" VerticalAlignment="Top" Height="94" Width="436" FontSize="40" Click="Button_Click"/>
         </Grid>
     </Grid>
 

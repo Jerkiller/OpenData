@@ -62,5 +62,10 @@ namespace csvReading
             //gestisco via get che comune visualizzare
             NavigationService.Navigate(new Uri("/ListaComuni.xaml?prov=ve", UriKind.Relative));
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/info.xaml", UriKind.Relative));
+        }
     }
 }

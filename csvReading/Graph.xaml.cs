@@ -149,12 +149,11 @@ namespace csvReading
 
             double range = Max() - Min();
 
-            int primoValore = valori.Count - 12;
             //MessageBox.Show("Primovalore "+primoValore+"\nche è uguale a: "+anni[primoValore]);
-            for (int w = primoValore; w < valori.Count; w++)
+            for (int w = 0; w < valori.Count; w++)
             {
                 //Calcolo ascisse
-                coordX = larghezzaGriglia * (w-11);
+                coordX = larghezzaGriglia * w;
 
                 //Calcolo ordinate
                 double invertito = (valori[w]-Min())* altezzaCanvas / range;
@@ -181,19 +180,30 @@ namespace csvReading
              Val7.Text = (min + step * 7).ToString();
              Val8.Text = max.ToString();
              Val9.Text = (max + step).ToString();
-             
-             Anno1.Text=anni[val-11].ToString();
-             Anno2.Text=anni[val-10].ToString();
-             Anno3.Text=anni[val-9].ToString();
-             Anno4.Text=anni[val-8].ToString();
-             Anno5.Text=anni[val-7].ToString();
-             Anno6.Text=anni[val-6].ToString();
-             Anno7.Text=anni[val-5].ToString();
-             Anno8.Text=anni[val-4].ToString();
-             Anno9.Text=anni[val-3].ToString();
-             Anno10.Text=anni[val-2].ToString();
-             Anno11.Text=anni[val-1].ToString();
-             
+
+             Anno0.Text = anni[val - 23].ToString();
+             Anno1.Text = anni[val - 22].ToString();
+             Anno2.Text = anni[val - 21].ToString();
+             Anno3.Text = anni[val - 20].ToString();
+             Anno4.Text = anni[val - 19].ToString();
+             Anno5.Text = anni[val - 18].ToString();
+             Anno6.Text = anni[val - 17].ToString();
+             Anno7.Text = anni[val - 16].ToString();
+             Anno8.Text = anni[val - 15].ToString();
+             Anno9.Text = anni[val - 14].ToString();
+             Anno10.Text = anni[val - 13].ToString();
+             Anno11.Text = anni[val - 12].ToString();
+             Anno12.Text = anni[val - 11].ToString();
+             Anno13.Text = anni[val - 10].ToString();
+             Anno14.Text = anni[val - 9].ToString();
+             Anno15.Text = anni[val - 8].ToString();
+             Anno16.Text = anni[val - 7].ToString();
+             Anno17.Text = anni[val - 6].ToString();
+             Anno18.Text = anni[val - 5].ToString();
+             Anno19.Text = anni[val - 4].ToString();
+             Anno20.Text = anni[val - 3].ToString();
+             Anno21.Text = anni[val - 2].ToString();
+             Anno22.Text = anni[val - 1].ToString();
         }
 
 

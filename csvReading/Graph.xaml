@@ -29,100 +29,182 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="14,0,10,0">
-            <Canvas Name="Caneva" Height="360" ScrollViewer.HorizontalScrollBarVisibility="Visible" VerticalAlignment="Top" Margin="6,0,10,0">
-                <Canvas.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black" Offset="0"/>
-                        <GradientStop Color="#FF0B1C2C" Offset="1"/>
-                    </LinearGradientBrush>
-                </Canvas.Background>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer VerticalScrollBarVisibility ="Disabled" HorizontalScrollBarVisibility="Hidden">
+                <Grid Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Canvas Name="Caneva" Width="880" Height="360" ScrollViewer.HorizontalScrollBarVisibility="Visible" VerticalAlignment="Top" Margin="6,0,10,0">
+                        <Canvas.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF0B1C2C" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Canvas.Background>
 
 
-                <!--Grafico-->
-                <Polyline Name="Grafico" StrokeStartLineCap="Round" Points="0 100, 40  150, 80 110, 120 200, 160 150, 200 110, 240 140, 280 250, 320 142, 360 150, 400 250, 440  50" Stroke="Blue" StrokeThickness="5" />
+                        <!--Grafico-->
+                        <Polyline Name="Grafico" StrokeStartLineCap="Round" Points="0 100, 40  150, 80 110, 120 200, 160 150, 200 110, 240 140, 280 250, 320 142, 360 150, 400 250, 440  50" Stroke="Blue" StrokeThickness="5" />
 
-                <!--Linee verticali griglia-->
-                <Line X1="40" Y1="0" X2="40" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="80" Y1="0" X2="80" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="120" Y1="0" X2="120" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="160" Y1="0" X2="160" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="200" Y1="0" X2="200" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="240" Y1="0" X2="240" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="280" Y1="0" X2="280" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="320" Y1="0" X2="320" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="360" Y1="0" X2="360" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="400" Y1="0" X2="400" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <!--Linee verticali griglia-->
+                        <Line X1="0" Y1="0" X2="0" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="40" Y1="0" X2="40" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="80" Y1="0" X2="80" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="120" Y1="0" X2="120" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="160" Y1="0" X2="160" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="200" Y1="0" X2="200" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="240" Y1="0" X2="240" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="280" Y1="0" X2="280" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="320" Y1="0" X2="320" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="360" Y1="0" X2="360" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="400" Y1="0" X2="400" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="440" Y1="0" X2="440" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="480" Y1="0" X2="480" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="520" Y1="0" X2="520" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="560" Y1="0" X2="560" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="600" Y1="0" X2="600" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="640" Y1="0" X2="640" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="680" Y1="0" X2="680" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="720" Y1="0" X2="720" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="760" Y1="0" X2="760" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="800" Y1="0" X2="800" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="840" Y1="0" X2="840" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="880" Y1="0" X2="880" Y2="360" Canvas.ZIndex="-30" Stroke="Azure" />
 
-                <!--Linee verticali griglia-->
-                <Line X1="0" Y1="40" X2="440" Y2="40" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="0" Y1="80" X2="440" Y2="80" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="0" Y1="120" X2="440" Y2="120" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="0" Y1="160" X2="440" Y2="160" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="0" Y1="200" X2="440" Y2="200" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="0" Y1="240" X2="440" Y2="240" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="0" Y1="280" X2="440" Y2="280" Canvas.ZIndex="-30" Stroke="Azure" />
-                <Line X1="0" Y1="320" X2="440" Y2="320" Canvas.ZIndex="-30" Stroke="Azure" />
+
+                        <!--Linee orizzontali griglia-->
+                        <Line X1="0" Y1="0" X2="880" Y2="0" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="0" Y1="40" X2="880" Y2="40" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="0" Y1="80" X2="880" Y2="80" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="0" Y1="120" X2="880" Y2="120" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="0" Y1="160" X2="880" Y2="160" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="0" Y1="200" X2="880" Y2="200" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="0" Y1="240" X2="880" Y2="240" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="0" Y1="280" X2="880" Y2="280" Canvas.ZIndex="-30" Stroke="Azure" />
+                        <Line X1="0" Y1="320" X2="880" Y2="320" Canvas.ZIndex="-30" Stroke="Azure" />
 
 
 
-                <!--Etichette date qui sotto-->
-                <TextBlock Name="Anno1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2004" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="26.5" Canvas.Top="391">
-                    <TextBlock.RenderTransform>
-                        <CompositeTransform Rotation="-90"/>
-                    </TextBlock.RenderTransform>
-                </TextBlock>
-            </Canvas>
-            <TextBlock Name="Anno2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2005" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="70,390,0,0">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-90"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock Name="Anno3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2006" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="110,390,0,0">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-90"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock Name="Anno4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2007" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="150,390,0,0">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-90"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock Name="Anno5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2008" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="190,390,0,0">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-90"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock Name="Anno6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2009" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="230,390,0,0">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-90"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock Name="Anno7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2010" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="270,390,0,0">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-90"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock Name="Anno8" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2011" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="310,390,0,0">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-90"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock Name="Anno9" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2012" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="351.5,390,0,0">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-90"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock Name="Anno10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2013" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="393,390,0,0">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-90"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock Name="Anno11" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2014" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="430.5,390,-27.853,0" Height="29.2" Width="53.353">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-90"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
+                        <!--Etichette date qui sotto-->
+                        <TextBlock Name="Anno0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2004" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="-10,390,0,0" >
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2004" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="30,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2005" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="70,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2006" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="110,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2007" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="150,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2008" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="190,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2009" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="230,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2010" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="270,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno8" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2011" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="310,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno9" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2012" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="350,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2013" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="390,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno11" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2014" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="430,390,0,0" Height="29.2" Width="53.353">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno12" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2007" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="470,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno13" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2008" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="510,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2009" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="550,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2010" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="590,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno16" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2011" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="630,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno17" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2012" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="670,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno18" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2013" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="710,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno19" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2014" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="750,390,0,0" Height="29.2" Width="53.353">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2012" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="790,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno21" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2013" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="830,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                        <TextBlock Name="Anno22" HorizontalAlignment="Left" TextWrapping="Wrap" Text="2014" VerticalAlignment="Top" RenderTransformOrigin="0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="870,390,0,0">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform Rotation="-90"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Canvas>
+
+                </Grid>
+            </ScrollViewer>
+
+
 
 
 

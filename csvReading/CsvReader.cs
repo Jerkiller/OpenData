@@ -187,28 +187,34 @@ namespace csvReading
 
             for(int w=0;w<lista.Count;w++)
             {
-                if(((lista[w].Sesso=="Femmina") ||(lista[w].Sesso=="Femmina"))&&(primoVal == null))
+                
+
+                
+                if(((lista[w].Sesso=="Femmina") ||(lista[w].Sesso=="Maschio"))&&(primoVal == null))
                 {
                     primoVal = lista[w];
                     continue;
                 }
 
-                if(((lista[w].Sesso=="Femmina") ||(lista[w].Sesso=="Femmina"))&&(primoVal != null))
+                if(((lista[w].Sesso=="Femmina") ||(lista[w].Sesso=="Maschio"))&&(primoVal != null))
                 {
                     listaAggregata.Add(primoVal.somma(lista[w]));
                     primoVal = null;
                 }
 
+
                 if (lista[w].Sesso == "Non rilevato")
                 {
                     listaAggregata.Add(lista[w]);
                 }
+
+                
+                 
             }//end for
             return listaAggregata;
         }
 
-        /// <returns>Una lista di interi a tre a tre costituiti da anno, num abitanti, e un delimitatore=0
-        /// es. 1990 23435 0 1991 24123 0 ...</returns>
+        /// <returns>Un array di due liste di interi, la prima indica i valori e la seconda gli anni</returns>
         public List<int>[] LoadDati(int comune, string dato)
         {
             List<int> listaValori = new List<int>();

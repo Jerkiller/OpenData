@@ -102,27 +102,32 @@ namespace csvReading
 
             //recupera che tipo di dato caricare
             NavigationContext.QueryString.TryGetValue("dato", out tipoDato);
+
             //carica dati
             LoadData();
 
-
             /*
-             * 
             string debug="";
             foreach(int w in anni)debug+=w.ToString();
             debug += "\n\n";
             foreach(int w in valori)debug+=w.ToString();
             MessageBox.Show(debug);
-             * 
-             */
+            */
 
             //imposta punti grafico
             Grafico.Points = calcolaPunti();
+            //imposta etichette
+            AggiornaEtichette();
+
+            //Imposta un colore a caso al grafico
+            SetRandomColor();
+
             //imposta titolo pagina
             PageTitle.Text = comune.Comune;
             if (comune.Comune.Length > 9) PageTitle.FontSize = 50;
             if (comune.Comune.Length > 18) PageTitle.FontSize = 40;
 
+            ApplicationTitle.Text = tipoDato;
             
             Statistiche.Text = "Statistiche:\n"+Statistica();
 
@@ -136,27 +141,61 @@ namespace csvReading
         }
 
         public PointCollection calcolaPunti() {
-            List<int> pop = csv.LoadPopolazione(idComune);
+            //List<int> pop = csv.LoadPopolazione(idComune);
 
             PointCollection listaPunti = new PointCollection();
             double coordX = 0;
             double coordY = 0;
 
             double range = Max() - Min();
-            
-            for (int w = 2; w < valori.Count; w++)
+
+            int primoValore = valori.Count - 12;
+            //MessageBox.Show("Primovalore "+primoValore+"\nche è uguale a: "+anni[primoValore]);
+            for (int w = primoValore; w < valori.Count; w++)
             {
                 //Calcolo ascisse
-                coordX = larghezzaGriglia * (w-2);
+                coordX = larghezzaGriglia * (w-11);
 
                 //Calcolo ordinate
                 double invertito = (valori[w]-Min())* altezzaCanvas / range;
-                coordY = altezzaCanvas - invertito * 0.8;
+                coordY = altezzaCanvas - invertito * 0.9;
+                //MessageBox.Show("valore " + w + "\n(" + valori[w] + " , " + anni[w] + ")\ncioè (" + coordX + " , " + coordY+")");
                 Point z = new Point(coordX, coordY);
                 listaPunti.Add(z);
             }
             return listaPunti;
         }
+
+        public void AggiornaEtichette() {
+             int val=valori.Count;
+             int min = Min();
+             int max = Max();
+             int step = (max - min)/8;
+             Val0.Text = min.ToString();
+             Val1.Text=(min+step).ToString();
+             Val2.Text=(min+step*2).ToString();
+             Val3.Text=(min+step*3).ToString();
+             Val4.Text=(min+step*4).ToString();
+             Val5.Text=(min+step*5).ToString();
+             Val6.Text=(min+step*6).ToString();
+             Val7.Text = (min + step * 7).ToString();
+             Val8.Text = max.ToString();
+             Val9.Text = (max + step).ToString();
+             
+             Anno1.Text=anni[val-11].ToString();
+             Anno2.Text=anni[val-10].ToString();
+             Anno3.Text=anni[val-9].ToString();
+             Anno4.Text=anni[val-8].ToString();
+             Anno5.Text=anni[val-7].ToString();
+             Anno6.Text=anni[val-6].ToString();
+             Anno7.Text=anni[val-5].ToString();
+             Anno8.Text=anni[val-4].ToString();
+             Anno9.Text=anni[val-3].ToString();
+             Anno10.Text=anni[val-2].ToString();
+             Anno11.Text=anni[val-1].ToString();
+             
+        }
+
 
         public Graph()
         {
@@ -164,6 +203,28 @@ namespace csvReading
             larghezzaGriglia = 40;
             larghezzaCanvas = Caneva.Width;
             altezzaCanvas = Caneva.Height;
+        }
+
+
+        public void SetRandomColor()
+        {
+            Random generator = new Random();
+            int num=generator.Next(0,9);
+            switch(num)
+            {
+                case (0): { Grafico.Stroke = new SolidColorBrush(Colors.Blue); break; }
+                case (1): { Grafico.Stroke = new SolidColorBrush(Colors.Red); break; }
+                case (2): { Grafico.Stroke = new SolidColorBrush(Colors.Green); break; }
+                case (3): { Grafico.Stroke = new SolidColorBrush(Colors.White); break; }
+                case (4): { Grafico.Stroke = new SolidColorBrush(Colors.Yellow); break; }
+                case (5): { Grafico.Stroke = new SolidColorBrush(Colors.Purple); break; }
+                case (6): { Grafico.Stroke = new SolidColorBrush(Colors.Orange); break; }
+                case (7): { Grafico.Stroke = new SolidColorBrush(Colors.Magenta); break; }
+                case (8): { Grafico.Stroke = new SolidColorBrush(Colors.Cyan); break; }
+                case (9): { Grafico.Stroke = new SolidColorBrush(Colors.Gray); break; }
+                default: { Grafico.Stroke = new SolidColorBrush(Colors.Blue); break; }
+            
+            }
         }
 
     }

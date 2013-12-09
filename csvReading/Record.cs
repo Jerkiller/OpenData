@@ -8,21 +8,6 @@ namespace csvReading
 {
     class Record
     {
-        /*
-        private int anno;
-        private string comune;
-        private int codiceIstat;
-        private string sesso;
-        private int popolazioneInizioAnno;
-        private int natiVivi;
-        private int morti;
-        private int iscritti;
-        private int cancellati;
-        private int popolazioneFineAnno;
-        private int popolazioneMedia;
-        */
-
-
 
         public Record(List<string> dati)
         {

@@ -31,37 +31,37 @@
                 <RowDefinition Height="352*"/>
                 <RowDefinition Height="255*"/>
             </Grid.RowDefinitions>
-            <Button Content="Ve" HorizontalAlignment="Left" Margin="307.987,259.687,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="103.836" UseLayoutRounding="False" Width="119.981" d:LayoutRounding="Auto" FontSize="50" Background="#FF0A3787" Click="Button7_Click" Grid.RowSpan="2" Canvas.ZIndex="20">
+            <Button Content="VE" HorizontalAlignment="Left" Margin="307.987,259.687,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="103.836" UseLayoutRounding="False" Width="119.981" d:LayoutRounding="Auto" FontSize="50" Background="#FF0A3787" Click="Button7_Click" Grid.RowSpan="2" Canvas.ZIndex="20">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="-14.449"/>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Pd" HorizontalAlignment="Left" Margin="164.931,294.155,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="91.617" UseLayoutRounding="False" Width="107.585" d:LayoutRounding="Auto" FontSize="40" Background="#FF0A3787" Click="Button6_Click" Canvas.ZIndex="20" Grid.RowSpan="2">
+            <Button Content="PD" HorizontalAlignment="Left" Margin="164.931,294.155,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="91.617" UseLayoutRounding="False" Width="107.585" d:LayoutRounding="Auto" FontSize="40" Background="#FF0A3787" Click="Button6_Click" Canvas.ZIndex="20" Grid.RowSpan="2">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="-14.449"/>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Tv" HorizontalAlignment="Left" Margin="232.026,183.423,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="89.203" UseLayoutRounding="False" Width="106.231" d:LayoutRounding="Auto" FontSize="40" Background="#FF0A3787" Click="Button5_Click" Canvas.ZIndex="20">
+            <Button Content="TV" HorizontalAlignment="Left" Margin="232.026,183.423,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="89.203" UseLayoutRounding="False" Width="106.231" d:LayoutRounding="Auto" FontSize="40" Background="#FF0A3787" Click="Button5_Click" Canvas.ZIndex="20">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="-1.232"/>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Bl" HorizontalAlignment="Left" Margin="281.121,50.732,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="103.836" UseLayoutRounding="False" Width="119.981" d:LayoutRounding="Auto" FontSize="50" Background="#FF0A3787" Click="Button4_Click" Canvas.ZIndex="20">
+            <Button Content="BL" HorizontalAlignment="Left" Margin="281.121,50.732,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="103.836" UseLayoutRounding="False" Width="119.981" d:LayoutRounding="Auto" FontSize="50" Background="#FF0A3787" Click="Button4_Click" Canvas.ZIndex="20">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="18.051"/>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Ro" HorizontalAlignment="Left" Margin="169.181,40.523,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="103.836" UseLayoutRounding="False" Width="119.981" d:LayoutRounding="Auto" FontSize="50" Background="#FF0A3787" Click="Button3_Click" Grid.Row="1" Canvas.ZIndex="20">
+            <Button Content="RO" HorizontalAlignment="Left" Margin="169.181,40.523,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="103.836" UseLayoutRounding="False" Width="119.981" d:LayoutRounding="Auto" FontSize="50" Background="#FF0A3787" Click="Button3_Click" Grid.Row="1" Canvas.ZIndex="20">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="18.051"/>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Vi" HorizontalAlignment="Left" Margin="100.304,178.984,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="101.062" UseLayoutRounding="False" Width="111.466" d:LayoutRounding="Auto" FontSize="50" Background="#FF0A3787" Click="Button2_Click" Canvas.ZIndex="20">
+            <Button Content="VI" HorizontalAlignment="Left" Margin="100.304,178.984,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="101.062" UseLayoutRounding="False" Width="111.466" d:LayoutRounding="Auto" FontSize="50" Background="#FF0A3787" Click="Button2_Click" Canvas.ZIndex="20">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="18.051"/>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Vr" HorizontalAlignment="Left" Margin="16.942,319.389,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="103.836" UseLayoutRounding="False" Width="119.981" d:LayoutRounding="Auto" FontSize="50" Background="#FF0A3787" Click="Button1_Click" Grid.RowSpan="2" Canvas.ZIndex="20">
+            <Button Content="VR" HorizontalAlignment="Left" Margin="16.942,319.389,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="103.836" UseLayoutRounding="False" Width="119.981" d:LayoutRounding="Auto" FontSize="50" Background="#FF0A3787" Click="Button1_Click" Grid.RowSpan="2" Canvas.ZIndex="20">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="11.157"/>
                 </Button.RenderTransform>

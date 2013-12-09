@@ -28,6 +28,49 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer VerticalScrollBarVisibility ="Hidden" HorizontalScrollBarVisibility="Disabled">
+                <Grid Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <TextBlock Height="900">
+                		<Run FontWeight="Bold" FontSize="40" Text="Open Data"/>
+                		<LineBreak/>
+                		<Run FontSize="28" Text="Gli 'Open Data' sono tutti quei dati"/>
+                		<LineBreak/>
+                		<Run FontSize="28" Text="resi pubblici da un ente senza"/>
+                		<LineBreak/>
+                		<Run FontSize="28" Text="restrizioni di copyright o licenze. "/>
+                		<LineBreak/>
+                		<Run FontSize="28" Text="Sono utilizzabili ed accessibili da"/>
+                		<LineBreak/>
+                		<Run FontSize="28" Text="chiunque, questo archivio anagrafic"/>
+                		<Run FontSize="28" Text="o"/>
+                		<LineBreak/>
+                		<Run FontSize="28" Text="proviene dal sito &quot;dati.veneto.it&quot;"/>
+                		<Run FontSize="28" Text="."/>
+                		<LineBreak/>
+                		<Run FontSize="28"/>
+                		<LineBreak/>
+                		<Run FontWeight="Bold" FontSize="40" Text="Open Veneto"/>
+                		<LineBreak/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="Quest'app nasce senz alcuno scopo"/>
+                		<LineBreak/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="di lucro, è perciò esente da"/>
+                		<LineBreak/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="pubblicità ed è gratuita. È"/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text=" stata"/>
+                		<LineBreak/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="sviluppata da Luca Favorido del"/>
+                		<LineBreak/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="gruppo No1 nell'ambito del "/>
+                		<LineBreak/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="progetto di Ingegneria del Software (corso tenuto dal docente Agostino"/>
+                		<LineBreak/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="Cortesi) dell'Università di Ca' "/>
+                		<LineBreak/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="Foscari."/>
+                		<LineBreak/>
+                    </TextBlock>
+                </Grid>
+            </ScrollViewer>
 
         </Grid>
     </Grid>

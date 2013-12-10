@@ -2,10 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace csvReading
 {
@@ -127,7 +125,7 @@ namespace csvReading
             if (comune.Comune.Length > 9) PageTitle.FontSize = 50;
             if (comune.Comune.Length > 18) PageTitle.FontSize = 40;
 
-            ApplicationTitle.Text = tipoDato;
+            ApplicationTitle.Text = tipoDato.ToUpper();
             
             Statistiche.Text = "Statistiche:\n"+Statistica();
 
@@ -169,17 +167,17 @@ namespace csvReading
              int val=valori.Count;
              int min = Min();
              int max = Max();
-             int step = (max - min)/8;
-             Val0.Text = min.ToString();
-             Val1.Text=(min+step).ToString();
-             Val2.Text=(min+step*2).ToString();
-             Val3.Text=(min+step*3).ToString();
-             Val4.Text=(min+step*4).ToString();
-             Val5.Text=(min+step*5).ToString();
-             Val6.Text=(min+step*6).ToString();
-             Val7.Text = (min + step * 7).ToString();
-             Val8.Text = max.ToString();
-             Val9.Text = (max + step).ToString();
+             double step = (double)((max - min))/8.000;
+             Val0.Text = Math.Round((double)min).ToString();
+             Val1.Text=Math.Round(min+step).ToString();
+             Val2.Text=Math.Round(min+step*2).ToString();
+             Val3.Text = Math.Round(min + step * 3).ToString();
+             Val4.Text = Math.Round(min + step * 4).ToString();
+             Val5.Text = Math.Round(min + step * 5).ToString();
+             Val6.Text = Math.Round(min + step * 6).ToString();
+             Val7.Text = Math.Round(min + step * 7).ToString();
+             Val8.Text = Math.Round((double)max).ToString();
+             Val9.Text = Math.Round(max + step).ToString();
 
              Anno0.Text = anni[val - 23].ToString();
              Anno1.Text = anni[val - 22].ToString();

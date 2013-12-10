@@ -20972,10 +20972,10 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;23029;Concamarise;Maschio;557;11;2;12;12;562;560
 2011;23030;Costermano;Femmina;1.797;21;16;90;77;1.805;1.801
 2011;23030;Costermano;Maschio;1.817;21;12;76;73;1.797;1.807
-2011;23031;DolcË;Femmina;1.269;13;15;39;40;1.250;1.260
-2011;23031;DolcË;Maschio;1.352;14;7;47;50;1.315;1.334
-2011;23032;ErbË;Femmina;915;11;6;40;27;928;922
-2011;23032;ErbË;Maschio;897;10;3;40;27;914;906
+2011;23031;Dolc√®;Femmina;1.269;13;15;39;40;1.250;1.260
+2011;23031;Dolc√®;Maschio;1.352;14;7;47;50;1.315;1.334
+2011;23032;Erb√®;Femmina;915;11;6;40;27;928;922
+2011;23032;Erb√®;Maschio;897;10;3;40;27;914;906
 2011;23033;Erbezzo;Femmina;380;3;3;5;8;369;375
 2011;23033;Erbezzo;Maschio;407;1;6;8;7;395;401
 2011;23034;Ferrara di Monte Baldo;Femmina;110;1;2;5;3;107;109
@@ -21022,8 +21022,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;23054;Nogarole Rocca;Maschio;1.777;31;15;128;67;1.791;1.784
 2011;23055;Oppeano;Femmina;4.700;64;29;203;171;4.728;4.714
 2011;23055;Oppeano;Maschio;4.746;62;34;239;170;4.730;4.738
-2011;23056;Pal˘;Femmina;630;5;5;30;17;636;633
-2011;23056;Pal˘;Maschio;655;6;6;29;23;643;649
+2011;23056;Pal√π;Femmina;630;5;5;30;17;636;633
+2011;23056;Pal√π;Maschio;655;6;6;29;23;643;649
 2011;23057;Pastrengo;Femmina;1.440;17;9;97;74;1.465;1.453
 2011;23057;Pastrengo;Maschio;1.443;12;11;95;88;1.432;1.438
 2011;23058;Pescantina;Femmina;8.261;80;54;292;238;8.227;8.244
@@ -21036,16 +21036,16 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;23061;Pressana;Maschio;1.307;19;15;51;40;1.302;1.305
 2011;23062;Rivoli Veronese;Femmina;1.072;11;4;44;42;1.082;1.077
 2011;23062;Rivoli Veronese;Maschio;1.062;10;11;40;40;1.060;1.061
-2011;23063;Ronc‡;Femmina;1.875;18;12;53;50;1.867;1.871
-2011;23063;Ronc‡;Maschio;1.891;21;13;63;45;1.886;1.889
+2011;23063;Ronc√ ;Femmina;1.875;18;12;53;50;1.867;1.871
+2011;23063;Ronc√ ;Maschio;1.891;21;13;63;45;1.886;1.889
 2011;23064;Ronco all'Adige;Femmina;3.080;21;29;97;89;3.047;3.064
 2011;23064;Ronco all'Adige;Maschio;3.141;32;24;114;98;3.123;3.132
 2011;23065;Roverchiara;Femmina;1.366;12;11;47;55;1.342;1.354
 2011;23065;Roverchiara;Maschio;1.473;9;19;46;57;1.402;1.438
 2011;23066;Roveredo di Gu‡;Femmina;791;9;5;22;12;805;798
 2011;23066;Roveredo di Gu‡;Maschio;755;9;5;20;24;744;750
-2011;23067;RoverË Veronese;Femmina;1.080;14;14;16;29;1.037;1.059
-2011;23067;RoverË Veronese;Maschio;1.126;9;5;17;23;1.089;1.108
+2011;23067;Rover√® Veronese;Femmina;1.080;14;14;16;29;1.037;1.059
+2011;23067;Rover√® Veronese;Maschio;1.126;9;5;17;23;1.089;1.108
 2011;23068;Salizzole;Femmina;1.826;19;15;63;38;1.843;1.835
 2011;23068;Salizzole;Maschio;1.920;24;15;59;51;1.911;1.916
 2011;23069;San Bonifacio;Femmina;10.344;118;88;529;344;10.251;10.298
@@ -21078,8 +21078,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;23082;Sommacampagna;Maschio;7.390;79;66;299;275;7.293;7.342
 2011;23083;Sona;Femmina;8.601;86;61;375;271;8.581;8.591
 2011;23083;Sona;Maschio;8.555;89;56;412;310;8.441;8.498
-2011;23084;Sorg‡;Femmina;1.588;17;11;49;56;1.563;1.576
-2011;23084;Sorg‡;Maschio;1.584;14;12;58;60;1.553;1.569
+2011;23084;Sorg√ ;Femmina;1.588;17;11;49;56;1.563;1.576
+2011;23084;Sorg√ ;Maschio;1.584;14;12;58;60;1.553;1.569
 2011;23085;Terrazzo;Femmina;1.190;11;11;41;35;1.164;1.177
 2011;23085;Terrazzo;Maschio;1.145;8;9;29;29;1.119;1.132
 2011;23086;Torri del Benaco;Femmina;1.529;9;13;77;48;1.454;1.492
@@ -21154,8 +21154,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;24022;Campiglia dei Berici;Maschio;879;11;7;27;19;888;884
 2011;24023;Campolongo sul Brenta;Femmina;421;2;4;16;19;414;418
 2011;24023;Campolongo sul Brenta;Maschio;408;2;2;25;14;421;415
-2011;24024;CarrË;Femmina;1.854;17;20;58;78;1.825;1.840
-2011;24024;CarrË;Maschio;1.811;17;10;70;77;1.800;1.806
+2011;24024;Carr√®;Femmina;1.854;17;20;58;78;1.825;1.840
+2011;24024;Carr√®;Maschio;1.811;17;10;70;77;1.800;1.806
 2011;24025;Cartigliano;Femmina;1.950;20;24;72;56;1.944;1.947
 2011;24025;Cartigliano;Maschio;1.880;15;14;61;55;1.857;1.869
 2011;24026;Cassola;Femmina;7.244;83;44;346;320;7.201;7.223
@@ -21280,8 +21280,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;24085;Roana;Maschio;2.151;17;24;68;42;2.151;2.151
 2011;24086;Romano d'Ezzelino;Femmina;7.290;64;44;233;241;7.287;7.289
 2011;24086;Romano d'Ezzelino;Maschio;7.331;80;41;217;259;7.212;7.272
-2011;24087;Ros‡;Femmina;7.223;82;76;231;192;7.169;7.196
-2011;24087;Ros‡;Maschio;6.915;76;54;220;175;6.922;6.919
+2011;24087;Ros√ ;Femmina;7.223;82;76;231;192;7.169;7.196
+2011;24087;Ros√ ;Maschio;6.915;76;54;220;175;6.922;6.919
 2011;24088;Rossano Veneto;Femmina;3.992;41;30;123;122;3.982;3.987
 2011;24088;Rossano Veneto;Maschio;3.967;45;36;126;115;3.934;3.951
 2011;24089;Rotzo;Femmina;329;5;2;5;5;330;330
@@ -21342,8 +21342,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;24117;Villaga;Maschio;986;12;5;19;33;976;981
 2011;24118;Villaverla;Femmina;3.107;23;14;104;124;3.075;3.091
 2011;24118;Villaverla;Maschio;3.137;29;18;110;100;3.083;3.110
-2011;24119;ZanË;Femmina;3.352;39;17;157;138;3.386;3.369
-2011;24119;ZanË;Maschio;3.247;31;24;153;169;3.238;3.243
+2011;24119;Zan√®;Femmina;3.352;39;17;157;138;3.386;3.369
+2011;24119;Zan√®;Maschio;3.247;31;24;153;169;3.238;3.243
 2011;24120;Zermeghedo;Femmina;692;6;5;26;27;677;685
 2011;24120;Zermeghedo;Maschio;688;10;1;37;35;690;689
 2011;24121;Zovencedo;Femmina;383;5;3;16;17;381;382
@@ -21356,8 +21356,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;25002;Alano di Piave;Maschio;1.510;19;17;34;62;1.438;1.474
 2011;25003;Alleghe;Femmina;726;3;6;23;25;713;720
 2011;25003;Alleghe;Maschio;628;3;6;31;22;616;622
-2011;25004;ArsiË;Femmina;1.325;6;29;27;41;1.269;1.297
-2011;25004;ArsiË;Maschio;1.210;9;17;32;37;1.193;1.202
+2011;25004;Arsi√®;Femmina;1.325;6;29;27;41;1.269;1.297
+2011;25004;Arsi√®;Maschio;1.210;9;17;32;37;1.193;1.202
 2011;25005;Auronzo di Cadore;Femmina;1.827;10;24;39;52;1.799;1.813
 2011;25005;Auronzo di Cadore;Maschio;1.686;19;21;27;51;1.645;1.666
 2011;25006;Belluno;Femmina;19.386;156;213;540;561;18.782;19.084
@@ -21440,8 +21440,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;25044;Rocca Pietore;Maschio;648;9;7;15;14;649;649
 2011;25045;San Gregorio nelle Alpi;Femmina;825;8;12;25;23;819;822
 2011;25045;San Gregorio nelle Alpi;Maschio;791;7;8;21;27;784;788
-2011;25046;San NicolÚ di Comelico;Femmina;208;3;2;3;11;201;205
-2011;25046;San NicolÚ di Comelico;Maschio;199;0;1;7;8;198;199
+2011;25046;San Nicol√≤ di Comelico;Femmina;208;3;2;3;11;201;205
+2011;25046;San Nicol√≤ di Comelico;Maschio;199;0;1;7;8;198;199
 2011;25047;San Pietro di Cadore;Femmina;875;8;15;15;16;856;866
 2011;25047;San Pietro di Cadore;Maschio;844;6;11;12;14;830;837
 2011;25048;Santa Giustina;Femmina;3.513;29;46;108;83;3.506;3.510
@@ -21486,8 +21486,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;25067;Voltago Agordino;Maschio;450;3;4;15;28;433;442
 2011;25068;Zoldo Alto;Femmina;525;2;7;10;19;499;512
 2011;25068;Zoldo Alto;Maschio;509;1;9;9;8;495;502
-2011;25069;ZoppË di Cadore;Femmina;138;0;3;0;4;130;134
-2011;25069;ZoppË di Cadore;Maschio;133;0;0;2;0;133;133
+2011;25069;Zopp√® di Cadore;Femmina;138;0;3;0;4;130;134
+2011;25069;Zopp√® di Cadore;Maschio;133;0;0;2;0;133;133
 2011;26001;Altivole;Femmina;3.424;43;18;125;126;3.392;3.408
 2011;26001;Altivole;Maschio;3.413;33;19;121;129;3.338;3.376
 2011;26002;Arcade;Femmina;2.192;35;11;107;90;2.188;2.190
@@ -21524,8 +21524,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;26017;Cimadolmo;Maschio;1.736;20;14;51;77;1.692;1.714
 2011;26018;Cison di Valmarino;Femmina;1.402;11;15;39;29;1.395;1.399
 2011;26018;Cison di Valmarino;Maschio;1.328;14;13;34;30;1.319;1.324
-2011;26019;CodognË;Femmina;2.633;28;23;79;89;2.612;2.623
-2011;26019;CodognË;Maschio;2.753;24;28;80;97;2.701;2.727
+2011;26019;Codogn√®;Femmina;2.633;28;23;79;89;2.612;2.623
+2011;26019;Codogn√®;Maschio;2.753;24;28;80;97;2.701;2.727
 2011;26020;Colle Umberto;Femmina;2.619;28;20;89;96;2.604;2.612
 2011;26020;Colle Umberto;Maschio;2.561;29;15;87;86;2.560;2.561
 2011;26021;Conegliano;Femmina;18.654;124;203;682;741;18.068;18.361
@@ -21560,8 +21560,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;26035;Istrana;Maschio;4.718;69;23;214;214;4.641;4.680
 2011;26036;Loria;Femmina;4.425;48;21;145;158;4.434;4.430
 2011;26036;Loria;Maschio;4.691;56;26;162;188;4.653;4.672
-2011;26037;MansuË;Femmina;2.429;24;11;70;73;2.436;2.433
-2011;26037;MansuË;Maschio;2.560;26;11;69;69;2.550;2.555
+2011;26037;Mansu√®;Femmina;2.429;24;11;70;73;2.436;2.433
+2011;26037;Mansu√®;Maschio;2.560;26;11;69;69;2.550;2.555
 2011;26038;Mareno di Piave;Femmina;4.798;46;34;186;133;4.838;4.818
 2011;26038;Mareno di Piave;Maschio;4.842;49;36;159;145;4.828;4.835
 2011;26039;Maser;Femmina;2.527;25;22;95;78;2.521;2.524
@@ -21606,8 +21606,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;26058;Ponte di Piave;Maschio;4.243;54;41;203;146;4.242;4.243
 2011;26059;Ponzano Veneto;Femmina;6.257;69;31;264;259;6.229;6.243
 2011;26059;Ponzano Veneto;Maschio;6.064;71;34;225;252;5.952;6.008
-2011;26060;PortobuffolË;Femmina;409;5;4;7;19;393;401
-2011;26060;PortobuffolË;Maschio;395;4;4;9;8;395;395
+2011;26060;Portobuffol√®;Femmina;409;5;4;7;19;393;401
+2011;26060;Portobuffol√®;Maschio;395;4;4;9;8;395;395
 2011;26061;Possagno;Femmina;1.107;9;12;55;53;1.090;1.099
 2011;26061;Possagno;Maschio;1.127;12;6;44;54;1.108;1.118
 2011;26062;Povegliano;Femmina;2.521;28;22;95;110;2.489;2.505
@@ -21742,16 +21742,16 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;27031;Quarto d'Altino;Maschio;4.024;27;35;201;195;3.970;3.997
 2011;27032;Salzano;Femmina;6.426;61;50;235;199;6.441;6.434
 2011;27032;Salzano;Maschio;6.301;66;49;211;210;6.261;6.281
-2011;27033;San Don‡ di Piave;Femmina;21.545;177;179;747;591;21.193;21.369
-2011;27033;San Don‡ di Piave;Maschio;20.047;204;169;684;594;19.430;19.739
+2011;27033;San Don√  di Piave;Femmina;21.545;177;179;747;591;21.193;21.369
+2011;27033;San Don√  di Piave;Maschio;20.047;204;169;684;594;19.430;19.739
 2011;27034;San Michele al Tagliamento;Femmina;6.268;42;64;196;173;6.245;6.257
 2011;27034;San Michele al Tagliamento;Maschio;5.835;37;69;159;140;5.753;5.794
 2011;27035;Santa Maria di Sala;Femmina;8.614;86;47;266;231;8.650;8.632
 2011;27035;Santa Maria di Sala;Maschio;8.664;86;51;244;226;8.668;8.666
 2011;27036;Santo Stino di Livenza;Femmina;6.678;43;62;195;165;6.652;6.665
 2011;27036;Santo Stino di Livenza;Maschio;6.410;58;54;202;160;6.399;6.405
-2011;27037;ScorzË;Femmina;9.619;87;73;298;311;9.572;9.596
-2011;27037;ScorzË;Maschio;9.433;98;61;289;327;9.331;9.382
+2011;27037;Scorz√®;Femmina;9.619;87;73;298;311;9.572;9.596
+2011;27037;Scorz√®;Maschio;9.433;98;61;289;327;9.331;9.382
 2011;27038;Spinea;Femmina;13.977;129;112;620;445;14.008;13.993
 2011;27038;Spinea;Maschio;13.064;129;112;531;466;12.869;12.967
 2011;27039;Stra;Femmina;3.908;38;33;162;125;3.911;3.910
@@ -21774,8 +21774,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;28003;Albignasego;Maschio;11.269;132;81;643;341;11.374;11.322
 2011;28004;Anguillara Veneta;Femmina;2.366;14;28;51;43;2.359;2.363
 2011;28004;Anguillara Veneta;Maschio;2.258;18;39;38;50;2.219;2.239
-2011;28005;Arqu‡ Petrarca;Femmina;927;12;10;20;22;914;921
-2011;28005;Arqu‡ Petrarca;Maschio;933;5;7;23;18;928;931
+2011;28005;Arqu√  Petrarca;Femmina;927;12;10;20;22;914;921
+2011;28005;Arqu√  Petrarca;Maschio;933;5;7;23;18;928;931
 2011;28006;Arre;Femmina;1.115;7;17;39;27;1.102;1.109
 2011;28006;Arre;Maschio;1.064;6;13;56;17;1.089;1.077
 2011;28007;Arzergrande;Femmina;2.416;15;25;93;86;2.379;2.398
@@ -21856,8 +21856,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;28046;Loreggia;Maschio;3.679;49;30;144;90;3.689;3.684
 2011;28047;Lozzo Atestino;Femmina;1.612;14;23;39;38;1.584;1.598
 2011;28047;Lozzo Atestino;Maschio;1.621;14;15;35;42;1.591;1.606
-2011;28048;Maser‡ di Padova;Femmina;4.547;29;28;170;136;4.550;4.549
-2011;28048;Maser‡ di Padova;Maschio;4.524;44;32;143;147;4.491;4.508
+2011;28048;Maser√  di Padova;Femmina;4.547;29;28;170;136;4.550;4.549
+2011;28048;Maser√  di Padova;Maschio;4.524;44;32;143;147;4.491;4.508
 2011;28049;Masi;Femmina;931;12;11;24;28;920;926
 2011;28049;Masi;Maschio;865;7;11;31;31;857;861
 2011;28050;Massanzago;Femmina;2.897;45;18;119;91;2.923;2.910
@@ -21978,8 +21978,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2011;29001;Adria;Maschio;9.795;65;114;223;246;9.645;9.720
 2011;29002;Ariano nel Polesine;Femmina;2.388;10;37;70;87;2.319;2.354
 2011;29002;Ariano nel Polesine;Maschio;2.268;10;34;80;60;2.222;2.245
-2011;29003;Arqu‡ Polesine;Femmina;1.467;5;17;36;43;1.438;1.453
-2011;29003;Arqu‡ Polesine;Maschio;1.383;15;15;50;41;1.370;1.377
+2011;29003;Arqu√  Polesine;Femmina;1.467;5;17;36;43;1.438;1.453
+2011;29003;Arqu√  Polesine;Maschio;1.383;15;15;50;41;1.370;1.377
 2011;29004;Badia Polesine;Femmina;5.601;46;69;217;173;5.444;5.523
 2011;29004;Badia Polesine;Maschio;5.264;53;74;194;150;5.115;5.190
 2011;29005;Bagnolo di Po;Femmina;710;7;7;34;41;690;700
@@ -22134,10 +22134,10 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;23029;Concamarise;Maschio;562;7;6;17;13;567;565
 2012;23030;Costermano;Femmina;1805;20;4;101;71;1851;1.828
 2012;23030;Costermano;Maschio;1797;15;8;95;84;1815;1.806
-2012;23031;DolcË;Femmina;1250;9;12;49;46;1250;1.250
-2012;23031;DolcË;Maschio;1315;18;7;78;64;1340;1.328
-2012;23032;ErbË;Femmina;928;10;9;45;46;928;928
-2012;23032;ErbË;Maschio;914;6;7;35;38;910;912
+2012;23031;Dolc√®;Femmina;1250;9;12;49;46;1250;1.250
+2012;23031;Dolc√®;Maschio;1315;18;7;78;64;1340;1.328
+2012;23032;Erb√®;Femmina;928;10;9;45;46;928;928
+2012;23032;Erb√®;Maschio;914;6;7;35;38;910;912
 2012;23033;Erbezzo;Femmina;369;2;5;7;10;363;366
 2012;23033;Erbezzo;Maschio;395;3;5;12;12;393;394
 2012;23034;Ferrara di Monte Baldo;Femmina;107;0;2;18;10;113;110
@@ -22184,8 +22184,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;23054;Nogarole Rocca;Maschio;1791;24;15;123;84;1839;1.815
 2012;23055;Oppeano;Femmina;4728;60;36;268;210;4810;4.769
 2012;23055;Oppeano;Maschio;4730;72;27;271;243;4803;4.767
-2012;23056;Pal˘;Femmina;636;7;8;18;22;631;634
-2012;23056;Pal˘;Maschio;643;5;12;25;26;635;639
+2012;23056;Pal√π;Femmina;636;7;8;18;22;631;634
+2012;23056;Pal√π;Maschio;643;5;12;25;26;635;639
 2012;23057;Pastrengo;Femmina;1465;20;11;86;63;1497;1.481
 2012;23057;Pastrengo;Maschio;1432;17;15;90;66;1458;1.445
 2012;23058;Pescantina;Femmina;8227;81;60;453;323;8378;8.303
@@ -22198,8 +22198,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;23061;Pressana;Maschio;1302;15;13;66;53;1317;1.310
 2012;23062;Rivoli Veronese;Femmina;1082;14;16;40;44;1076;1.079
 2012;23062;Rivoli Veronese;Maschio;1060;9;9;40;43;1057;1.059
-2012;23063;Ronc‡;Femmina;1867;14;17;55;54;1865;1.866
-2012;23063;Ronc‡;Maschio;1886;14;17;73;62;1894;1.890
+2012;23063;Ronc√ ;Femmina;1867;14;17;55;54;1865;1.866
+2012;23063;Ronc√ ;Maschio;1886;14;17;73;62;1894;1.890
 2012;23064;Ronco all'Adige;Femmina;3047;25;33;101;89;3051;3.049
 2012;23064;Ronco all'Adige;Maschio;3123;31;39;97;97;3115;3.119
 2012;23065;Roverchiara;Femmina;1342;17;20;31;58;1312;1.327
@@ -22240,8 +22240,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;23082;Sommacampagna;Maschio;7293;67;50;260;267;7303;7.298
 2012;23083;Sona;Femmina;8581;84;53;338;351;8599;8.590
 2012;23083;Sona;Maschio;8441;87;61;412;404;8475;8.458
-2012;23084;Sorg‡;Femmina;1563;17;20;72;62;1570;1.567
-2012;23084;Sorg‡;Maschio;1553;17;17;75;54;1574;1.564
+2012;23084;Sorg√ ;Femmina;1563;17;20;72;62;1570;1.567
+2012;23084;Sorg√ ;Maschio;1553;17;17;75;54;1574;1.564
 2012;23085;Terrazzo;Femmina;1164;11;17;32;36;1154;1.159
 2012;23085;Terrazzo;Maschio;1119;8;18;20;28;1101;1.110
 2012;23086;Torri del Benaco;Femmina;1454;12;13;125;68;1510;1.482
@@ -22316,8 +22316,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;24022;Campiglia dei Berici;Maschio;888;10;9;13;29;873;881
 2012;24023;Campolongo sul Brenta;Femmina;414;7;5;21;22;415;415
 2012;24023;Campolongo sul Brenta;Maschio;421;7;2;21;15;432;427
-2012;24024;CarrË;Femmina;1825;25;10;84;75;1849;1.837
-2012;24024;CarrË;Maschio;1800;20;12;86;62;1832;1.816
+2012;24024;Carr√®;Femmina;1825;25;10;84;75;1849;1.837
+2012;24024;Carr√®;Maschio;1800;20;12;86;62;1832;1.816
 2012;24025;Cartigliano;Femmina;1944;15;15;70;63;1951;1.948
 2012;24025;Cartigliano;Maschio;1857;12;18;68;64;1855;1.856
 2012;24026;Cassola;Femmina;7201;71;42;334;329;7235;7.218
@@ -22442,8 +22442,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;24085;Roana;Maschio;2151;16;26;90;67;2164;2.158
 2012;24086;Romano d'Ezzelino;Femmina;7287;72;59;315;312;7303;7.295
 2012;24086;Romano d'Ezzelino;Maschio;7212;56;60;282;326;7164;7.188
-2012;24087;Ros‡;Femmina;7169;81;59;365;258;7298;7.234
-2012;24087;Ros‡;Maschio;6922;82;42;306;238;7030;6.976
+2012;24087;Ros√ ;Femmina;7169;81;59;365;258;7298;7.234
+2012;24087;Ros√ ;Maschio;6922;82;42;306;238;7030;6.976
 2012;24088;Rossano Veneto;Femmina;3982;44;34;163;121;4034;4.008
 2012;24088;Rossano Veneto;Maschio;3934;46;25;158;139;3974;3.954
 2012;24089;Rotzo;Femmina;330;6;3;9;4;338;334
@@ -22504,8 +22504,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;24117;Villaga;Maschio;976;9;6;20;25;974;975
 2012;24118;Villaverla;Femmina;3075;30;23;110;151;3041;3.058
 2012;24118;Villaverla;Maschio;3083;22;22;115;97;3101;3.092
-2012;24119;ZanË;Femmina;3386;29;28;142;151;3378;3.382
-2012;24119;ZanË;Maschio;3238;24;29;149;123;3259;3.249
+2012;24119;Zan√®;Femmina;3386;29;28;142;151;3378;3.382
+2012;24119;Zan√®;Maschio;3238;24;29;149;123;3259;3.249
 2012;24120;Zermeghedo;Femmina;677;12;6;39;33;689;683
 2012;24120;Zermeghedo;Maschio;690;10;3;42;25;714;702
 2012;24121;Zovencedo;Femmina;381;2;3;12;19;373;377
@@ -22518,8 +22518,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;25002;Alano di Piave;Maschio;1438;11;11;41;61;1418;1.428
 2012;25003;Alleghe;Femmina;713;3;15;19;37;683;698
 2012;25003;Alleghe;Maschio;616;9;6;13;39;593;605
-2012;25004;ArsiË;Femmina;1269;6;21;45;33;1266;1.268
-2012;25004;ArsiË;Maschio;1193;6;22;26;28;1175;1.184
+2012;25004;Arsi√®;Femmina;1269;6;21;45;33;1266;1.268
+2012;25004;Arsi√®;Maschio;1193;6;22;26;28;1175;1.184
 2012;25005;Auronzo di Cadore;Femmina;1799;8;24;35;48;1770;1.785
 2012;25005;Auronzo di Cadore;Maschio;1645;14;16;46;43;1646;1.646
 2012;25006;Belluno;Femmina;18782;115;234;736;648;18751;18.767
@@ -22602,8 +22602,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;25044;Rocca Pietore;Maschio;649;3;4;14;22;640;645
 2012;25045;San Gregorio nelle Alpi;Femmina;819;8;9;38;29;827;823
 2012;25045;San Gregorio nelle Alpi;Maschio;784;8;12;25;22;783;784
-2012;25046;San NicolÚ di Comelico;Femmina;201;2;1;8;4;206;204
-2012;25046;San NicolÚ di Comelico;Maschio;198;2;0;7;6;201;200
+2012;25046;San Nicol√≤ di Comelico;Femmina;201;2;1;8;4;206;204
+2012;25046;San Nicol√≤ di Comelico;Maschio;198;2;0;7;6;201;200
 2012;25047;San Pietro di Cadore;Femmina;856;4;17;24;24;843;850
 2012;25047;San Pietro di Cadore;Maschio;830;7;19;16;22;812;821
 2012;25048;Santa Giustina;Femmina;3506;35;40;131;111;3521;3.514
@@ -22648,8 +22648,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;25067;Voltago Agordino;Maschio;433;3;8;21;12;437;435
 2012;25068;Zoldo Alto;Femmina;499;1;8;11;23;480;490
 2012;25068;Zoldo Alto;Maschio;495;2;9;8;24;472;484
-2012;25069;ZoppË di Cadore;Femmina;130;1;2;2;7;124;127
-2012;25069;ZoppË di Cadore;Maschio;133;1;2;1;5;128;131
+2012;25069;Zopp√® di Cadore;Femmina;130;1;2;2;7;124;127
+2012;25069;Zopp√® di Cadore;Maschio;133;1;2;1;5;128;131
 2012;26001;Altivole;Femmina;3392;45;19;143;107;3454;3.423
 2012;26001;Altivole;Maschio;3338;30;33;158;126;3367;3.353
 2012;26002;Arcade;Femmina;2188;23;13;113;97;2214;2.201
@@ -22686,8 +22686,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;26017;Cimadolmo;Maschio;1692;19;11;83;65;1718;1.705
 2012;26018;Cison di Valmarino;Femmina;1395;13;8;50;56;1394;1.395
 2012;26018;Cison di Valmarino;Maschio;1319;14;8;49;46;1328;1.324
-2012;26019;CodognË;Femmina;2612;25;22;95;70;2640;2.626
-2012;26019;CodognË;Maschio;2701;18;16;86;75;2714;2.708
+2012;26019;Codogn√®;Femmina;2612;25;22;95;70;2640;2.626
+2012;26019;Codogn√®;Maschio;2701;18;16;86;75;2714;2.708
 2012;26020;Colle Umberto;Femmina;2604;23;18;115;100;2624;2.614
 2012;26020;Colle Umberto;Maschio;2560;24;26;118;101;2575;2.568
 2012;26021;Conegliano;Femmina;18068;120;194;818;775;18037;18.053
@@ -22722,8 +22722,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;26035;Istrana;Maschio;4641;66;25;223;221;4684;4.663
 2012;26036;Loria;Femmina;4434;41;33;169;137;4474;4.454
 2012;26036;Loria;Maschio;4653;53;27;158;138;4699;4.676
-2012;26037;MansuË;Femmina;2436;26;10;77;57;2472;2.454
-2012;26037;MansuË;Maschio;2550;34;19;57;49;2573;2.562
+2012;26037;Mansu√®;Femmina;2436;26;10;77;57;2472;2.454
+2012;26037;Mansu√®;Maschio;2550;34;19;57;49;2573;2.562
 2012;26038;Mareno di Piave;Femmina;4838;63;35;164;148;4882;4.860
 2012;26038;Mareno di Piave;Maschio;4828;56;26;177;154;4881;4.855
 2012;26039;Maser;Femmina;2521;32;19;93;59;2568;2.545
@@ -22768,8 +22768,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;26058;Ponte di Piave;Maschio;4242;49;38;166;171;4248;4.245
 2012;26059;Ponzano Veneto;Femmina;6229;78;34;274;251;6296;6.263
 2012;26059;Ponzano Veneto;Maschio;5952;77;45;284;242;6026;5.989
-2012;26060;PortobuffolË;Femmina;393;5;3;10;13;392;393
-2012;26060;PortobuffolË;Maschio;395;5;0;16;11;405;400
+2012;26060;Portobuffol√®;Femmina;393;5;3;10;13;392;393
+2012;26060;Portobuffol√®;Maschio;395;5;0;16;11;405;400
 2012;26061;Possagno;Femmina;1090;10;8;43;47;1088;1.089
 2012;26061;Possagno;Maschio;1108;14;18;42;58;1088;1.098
 2012;26062;Povegliano;Femmina;2489;31;18;90;89;2503;2.496
@@ -22872,8 +22872,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;27015;Fossalta di Piave;Maschio;2059;13;18;70;72;2052;2.056
 2012;27016;Fossalta di Portogruaro;Femmina;3185;16;43;99;107;3150;3.168
 2012;27016;Fossalta di Portogruaro;Maschio;2899;23;22;84;91;2893;2.896
-2012;27017;FossÚ;Femmina;3489;37;27;175;132;3542;3.516
-2012;27017;FossÚ;Maschio;3313;49;20;170;122;3390;3.352
+2012;27017;Foss√≤;Femmina;3489;37;27;175;132;3542;3.516
+2012;27017;Foss√≤;Maschio;3313;49;20;170;122;3390;3.352
 2012;27018;Gruaro;Femmina;1436;9;8;56;43;1450;1.443
 2012;27018;Gruaro;Maschio;1372;9;19;49;45;1366;1.369
 2012;27019;Jesolo;Femmina;12753;93;118;400;338;12790;12.772
@@ -22904,16 +22904,16 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;27031;Quarto d'Altino;Maschio;3970;41;41;208;146;4032;4.001
 2012;27032;Salzano;Femmina;6441;61;52;198;192;6456;6.449
 2012;27032;Salzano;Maschio;6261;59;42;192;179;6291;6.276
-2012;27033;San Don‡ di Piave;Femmina;21193;186;220;900;585;21474;21.334
-2012;27033;San Don‡ di Piave;Maschio;19430;205;201;943;630;19747;19.589
+2012;27033;San Don√  di Piave;Femmina;21193;186;220;900;585;21474;21.334
+2012;27033;San Don√  di Piave;Maschio;19430;205;201;943;630;19747;19.589
 2012;27034;San Michele al Tagliamento;Femmina;6245;43;59;190;160;6259;6.252
 2012;27034;San Michele al Tagliamento;Maschio;5753;35;71;147;132;5732;5.743
 2012;27035;Santa Maria di Sala;Femmina;8650;95;56;291;230;8750;8.700
 2012;27035;Santa Maria di Sala;Maschio;8668;84;47;261;244;8722;8.695
 2012;27036;Santo Stino di Livenza;Femmina;6652;58;76;168;178;6624;6.638
 2012;27036;Santo Stino di Livenza;Maschio;6399;61;65;175;164;6406;6.403
-2012;27037;ScorzË;Femmina;9572;86;86;291;300;9563;9.568
-2012;27037;ScorzË;Maschio;9331;95;69;268;317;9308;9.320
+2012;27037;Scorz√®;Femmina;9572;86;86;291;300;9563;9.568
+2012;27037;Scorz√®;Maschio;9331;95;69;268;317;9308;9.320
 2012;27038;Spinea;Femmina;14008;108;125;643;501;14133;14.071
 2012;27038;Spinea;Maschio;12869;142;121;664;561;12993;12.931
 2012;27039;Stra;Femmina;3911;33;41;162;116;3949;3.930
@@ -22936,8 +22936,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;28003;Albignasego;Maschio;11374;131;78;562;357;11632;11.503
 2012;28004;Anguillara Veneta;Femmina;2359;21;24;43;58;2341;2.350
 2012;28004;Anguillara Veneta;Maschio;2219;15;19;38;50;2203;2.211
-2012;28005;Arqu‡ Petrarca;Femmina;914;8;6;30;35;911;913
-2012;28005;Arqu‡ Petrarca;Maschio;928;11;7;22;28;926;927
+2012;28005;Arqu√  Petrarca;Femmina;914;8;6;30;35;911;913
+2012;28005;Arqu√  Petrarca;Maschio;928;11;7;22;28;926;927
 2012;28006;Arre;Femmina;1102;12;10;37;31;1110;1.106
 2012;28006;Arre;Maschio;1089;16;14;42;25;1108;1.099
 2012;28007;Arzergrande;Femmina;2379;22;23;84;77;2385;2.382
@@ -23018,8 +23018,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;28046;Loreggia;Maschio;3689;68;21;147;102;3781;3.735
 2012;28047;Lozzo Atestino;Femmina;1584;9;10;60;57;1586;1.585
 2012;28047;Lozzo Atestino;Maschio;1591;9;16;47;36;1595;1.593
-2012;28048;Maser‡ di Padova;Femmina;4550;44;21;147;155;4565;4.558
-2012;28048;Maser‡ di Padova;Maschio;4491;50;33;153;157;4504;4.498
+2012;28048;Maser√  di Padova;Femmina;4550;44;21;147;155;4565;4.558
+2012;28048;Maser√  di Padova;Maschio;4491;50;33;153;157;4504;4.498
 2012;28049;Masi;Femmina;920;12;11;51;54;918;919
 2012;28049;Masi;Maschio;857;9;13;41;36;858;858
 2012;28050;Massanzago;Femmina;2923;29;10;83;113;2912;2.918
@@ -23060,8 +23060,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;28067;Ponso;Maschio;1239;14;12;53;36;1258;1.249
 2012;28068;Pontelongo;Femmina;1988;16;32;83;88;1967;1.978
 2012;28068;Pontelongo;Maschio;1917;20;18;70;77;1912;1.915
-2012;28069;Ponte San NicolÚ;Femmina;6793;57;41;329;250;6888;6.841
-2012;28069;Ponte San NicolÚ;Maschio;6454;66;42;271;240;6509;6.482
+2012;28069;Ponte San Nicol√≤;Femmina;6793;57;41;329;250;6888;6.841
+2012;28069;Ponte San Nicol√≤;Maschio;6454;66;42;271;240;6509;6.482
 2012;28070;Pozzonovo;Femmina;1858;15;8;45;53;1857;1.858
 2012;28070;Pozzonovo;Maschio;1772;8;23;50;46;1761;1.767
 2012;28071;Rovolon;Femmina;2399;40;19;94;71;2443;2.421
@@ -23140,8 +23140,8 @@ Anno;Codice Istat comune (numerico);Comune;Sesso;Popolazione a inizio anno;Nati 
 2012;29001;Adria;Maschio;9645;69;136;290;233;9635;9.640
 2012;29002;Ariano nel Polesine;Femmina;2319;16;30;87;80;2312;2.316
 2012;29002;Ariano nel Polesine;Maschio;2222;9;33;102;102;2198;2.210
-2012;29003;Arqu‡ Polesine;Femmina;1438;12;22;69;48;1449;1.444
-2012;29003;Arqu‡ Polesine;Maschio;1370;13;13;68;37;1401;1.386
+2012;29003;Arqu√  Polesine;Femmina;1438;12;22;69;48;1449;1.444
+2012;29003;Arqu√  Polesine;Maschio;1370;13;13;68;37;1401;1.386
 2012;29004;Badia Polesine;Femmina;5444;34;81;367;221;5543;5.494
 2012;29004;Badia Polesine;Maschio;5115;49;63;312;203;5210;5.163
 2012;29005;Bagnolo di Po;Femmina;690;5;9;32;31;687;689

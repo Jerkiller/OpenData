@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{23cca4d4-3031-4e39-a2cc-59aae60b4009}" Title="Veneto Open Data" RuntimeType="Silverlight" Version="0.0.0.1" Genre="apps.normal" Author="No1" Description="App per curiosoni, tutte le statistiche anagrafiche sul Veneto." Publisher="No1">
+  <App xmlns="" ProductID="{23cca4d4-3031-4e39-a2cc-59aae60b4009}" Title="Open Veneto" RuntimeType="Silverlight" Version="0.0.0.1" Genre="apps.normal" Author="Luca Favorido" Description="App per curiosoni, tutte le statistiche anagrafiche sul Veneto." Publisher="Luca Favorido">
     <IconPath IsRelative="true" IsResource="false">Images\venetoicon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES" />
@@ -26,7 +26,7 @@
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Images\venetotile.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>Veneto Open Data</Title>
+          <Title>Open Veneto</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>

@@ -30,7 +30,12 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <ScrollViewer VerticalScrollBarVisibility ="Hidden" HorizontalScrollBarVisibility="Disabled">
                 <Grid Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
-                    <TextBlock Height="900">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Source="/Images/open_data.png" />
+                    <TextBlock Grid.Row="1" Margin="0,-70,0,0">
                 		<Run FontWeight="Bold" FontSize="40" Text="Open Data"/>
                 		<LineBreak/>
                 		<Run FontSize="28" Text="Gli 'Open Data' sono tutti quei dati"/>
@@ -41,11 +46,9 @@
                 		<LineBreak/>
                 		<Run FontSize="28" Text="Sono utilizzabili ed accessibili da"/>
                 		<LineBreak/>
-                		<Run FontSize="28" Text="chiunque, questo archivio anagrafic"/>
-                		<Run FontSize="28" Text="o"/>
+                		<Run FontSize="28" Text="chiunque, questo archivio anagrafico"/>
                 		<LineBreak/>
-                		<Run FontSize="28" Text="proviene dal sito &quot;dati.veneto.it&quot;"/>
-                		<Run FontSize="28" Text="."/>
+                		<Run FontSize="28" Text="proviene dal sito &quot;dati.veneto.it&quot;."/>
                 		<LineBreak/>
                 		<Run FontSize="28"/>
                 		<LineBreak/>
@@ -55,14 +58,15 @@
                 		<LineBreak/>
                 		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="di lucro, è perciò esente da"/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="pubblicità ed è gratuita. È"/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text=" stata"/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="pubblicità ed è gratuita. È stata"/>
                 		<LineBreak/>
                 		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="sviluppata da Luca Favorido del"/>
                 		<LineBreak/>
                 		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="gruppo No1 nell'ambito del "/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="progetto di Ingegneria del Software (corso tenuto dal docente Agostino"/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="progetto di Ingegneria del Software"/>
+                		<LineBreak/>
+                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="(corso tenuto dal docente Agostino"/>
                 		<LineBreak/>
                 		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="Cortesi) dell'Università di Ca' "/>
                 		<LineBreak/>

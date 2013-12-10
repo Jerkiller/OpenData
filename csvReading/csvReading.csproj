@@ -122,6 +122,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\graph.png" />
+    <Content Include="Images\open_data.png" />
     <Content Include="Images\veneto.png" />
     <Content Include="Images\venetoicon.png" />
     <Content Include="Images\venetotile.png" />

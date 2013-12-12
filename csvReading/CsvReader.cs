@@ -268,6 +268,58 @@ namespace csvReading
         }
 
 
+        /// <returns>Un array di due liste double&int, la prima indica i valori e la seconda gli anni</returns>
+        public List<double>[] LoadDoubleDati(int comune, string dato)
+        {
+            List<double> listaValori = new List<double>();
+            List<double> listaAnni = new List<double>();
+
+            List<Record> dati = LoadRecord(comune);
+            List<Record> datiAggregati = AggregaSessi(dati);
+
+
+            //riempi listaAnni
+            foreach (Record w in datiAggregati) listaAnni.Add(w.Anno);
+
+            //riempi listaValori
+            switch (dato)
+            {
+                case ("natalita"):
+                    {
+                        foreach (Record w in datiAggregati)
+                        {
+                            double nati = w.NatiVivi;
+                            double tot = w.PopolazioneMedia;
+                            listaValori.Add(Math.Round((nati / tot) * 1000));
+                        }
+                        break;
+                    }
+                case ("mortalita"):
+                    {
+                        foreach (Record w in datiAggregati)
+                        {
+                            double morti = w.Morti;
+                            double tot = w.PopolazioneMedia;
+                            listaValori.Add(Math.Round((morti / tot) * 1000));
+                        } 
+                        break;
+                    }
+                default:
+                    {
+                        MessageBox.Show("Errore nel caricamento del dato"); break;
+                    }
+            }
+
+            //compongo l'array di 2 liste valori/anni
+            List<double>[] array = new List<double>[2];
+            array[0] = listaValori;
+            array[1] = listaAnni;
+            return array;
+        }
+
+
+
+
         /// <returns>Una lista di stringhe date dall'esplosione della stringa principale</returns>
         public List<string> SplitLine(string csvLine)
         {

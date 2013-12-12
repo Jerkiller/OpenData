@@ -34,44 +34,60 @@
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Image Grid.Row="0" Source="/Images/open_data.png" />
-                    <TextBlock Grid.Row="1" Margin="0,-70,0,0">
-                		<Run FontWeight="Bold" FontSize="40" Text="Open Data"/>
+                    <Image Name="Img" Grid.Row="0" Source="/Images/open_data.png" />
+                    <TextBlock Name="Testo" Grid.Row="1" Margin="0,-70,0,0">
+                		<Run FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="40" Text="Open Data"/>
                 		<LineBreak/>
-                		<Run FontSize="28" Text="Gli 'Open Data' sono tutti quei dati"/>
+                		<Run FontSize="28" Text="Gli  &quot;Open Data&quot;  sono tutti quei dati"/>
                 		<LineBreak/>
-                		<Run FontSize="28" Text="resi pubblici da un ente senza"/>
+                		<Run FontSize="28" Text="resi   pubblici   da   un   ente   senza"/>
                 		<LineBreak/>
-                		<Run FontSize="28" Text="restrizioni di copyright o licenze. "/>
+                		<Run FontSize="28" Text="restrizioni  di  copyright  o  licenze. "/>
                 		<LineBreak/>
-                		<Run FontSize="28" Text="Sono utilizzabili ed accessibili da"/>
+                		<Run FontSize="28" Text="Sono  utilizzabili   ed   accessibili   da"/>
                 		<LineBreak/>
                 		<Run FontSize="28" Text="chiunque, questo archivio anagrafico"/>
                 		<LineBreak/>
                 		<Run FontSize="28" Text="proviene dal sito &quot;dati.veneto.it&quot;."/>
                 		<LineBreak/>
-                		<Run FontSize="28"/>
                 		<LineBreak/>
-                		<Run FontWeight="Bold" FontSize="40" Text="Open Veneto"/>
+                		<Run FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="40" Text="Open Veneto"/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="Quest'app nasce senz alcuno scopo"/>
+                		<Run FontSize="28" Text="Questa app nasce senz alcuno scopo"/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="di lucro, è perciò esente da"/>
+                		<Run FontSize="28" Text="di    lucro,    è    perciò    esente    da"/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="pubblicità ed è gratuita. È stata"/>
+                		<Run FontSize="28" Text="pubblicità   ed   è  gratuita.   È   stata"/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="sviluppata da Luca Favorido del"/>
+                		<Run FontSize="28" Text="sviluppata  da   Luca  Favorido   (del"/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="gruppo No1 nell'ambito del "/>
+                		<Run FontSize="28" Text="gruppo   &quot;No1&quot;)    nell' ambito    del"/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="progetto di Ingegneria del Software"/>
+                		<Run FontSize="28" Text="progetto di Ingegneria del Software"/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="(corso tenuto dal docente Agostino"/>
+                		<Run FontSize="28" Text="(uno  dei  corsi  tenuti  dal  docente"/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="Cortesi) dell'Università di Ca' "/>
+                		<Run FontSize="28" Text="Agostino  Cortesi)  dell'Università  di"/>
                 		<LineBreak/>
-                		<Run FontSize="28" FontFamily="Segoe WP Semibold" Text="Foscari."/>
+                		<Run FontSize="28" Text="Ca' Foscari."/>
                 		<LineBreak/>
+                    	<Run FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="40" Text="Dati"/>
+                    	<LineBreak/>
+                    	<Run FontSize="28" Text="I dati qui presenti, vengono espressi,"/>
+                    	<LineBreak/>
+                    	<Run FontSize="28" Text="anche in forma grafica  e  rielaborati"/>
+                    	<LineBreak/>
+                        <Run FontSize="28" Text="come avviene per:"/>
+                    	<LineBreak/>
+                    	<Run FontSize="28" Foreground="#FF3EAAE8" Text="Tasso di Natalità  " />
+                    	<Run FontSize="28" Text=" -  indica il numero"/>
+                    	<LineBreak/>
+                    	<Run FontSize="28" Text="medio di nati ogni 1000 abitanti."/>
+                    	<LineBreak/>
+                    	<Run FontSize="28" Foreground="#FF3EAAE8" Text="Tasso di Mortalità "/>
+                    	<Run FontSize="28" Text=" - indica il numero"/>
+                    	<LineBreak/>
+                    	<Run FontSize="28" Text="medio di morti ogni 1000 abitanti."/>
                     </TextBlock>
                 </Grid>
             </ScrollViewer>

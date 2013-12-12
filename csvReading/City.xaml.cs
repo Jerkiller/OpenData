@@ -32,6 +32,11 @@ namespace csvReading
             Comune.Text = dati.Comune;
             Morti.Text = dati.Morti.ToString();
             Nati.Text = dati.NatiVivi.ToString();
+            double nati = dati.NatiVivi;
+            double morti = dati.Morti;
+            double tot = dati.PopolazioneMedia;
+            TassoNatalita.Text = Math.Round((nati / tot) * 1000, 2).ToString();
+            TassoMortalita.Text = Math.Round((morti / tot) * 1000, 2).ToString();
             Anno.Text = "Dati aggiornati al " + dati.Anno;
             Immigrati.Text = dati.Iscritti.ToString();
             Emigrati.Text = dati.Cancellati.ToString();
@@ -113,10 +118,20 @@ namespace csvReading
             //gestisco via get che dato e di che comune visualizzare
             NavigationService.Navigate(new Uri("/Graph.xaml?dato=nati&comune=" + idComune.ToString(), UriKind.Relative));
         }
+        private void Natalita_Click(object sender, RoutedEventArgs e)
+        {
+            //gestisco via get che dato e di che comune visualizzare
+            NavigationService.Navigate(new Uri("/Graph.xaml?dato=natalita&comune=" + idComune.ToString(), UriKind.Relative));
+        }
         private void Morti_Click(object sender, RoutedEventArgs e)
         {
             //gestisco via get che dato e di che comune visualizzare
             NavigationService.Navigate(new Uri("/Graph.xaml?dato=morti&comune=" + idComune.ToString(), UriKind.Relative));
+        }
+        private void Mortalita_Click(object sender, RoutedEventArgs e)
+        {
+            //gestisco via get che dato e di che comune visualizzare
+            NavigationService.Navigate(new Uri("/Graph.xaml?dato=mortalita&comune=" + idComune.ToString(), UriKind.Relative));
         }
         private void Immigrati_Click(object sender, RoutedEventArgs e)
         {

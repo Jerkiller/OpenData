@@ -290,7 +290,7 @@ namespace csvReading
                         {
                             double nati = w.NatiVivi;
                             double tot = w.PopolazioneMedia;
-                            listaValori.Add(Math.Round((nati / tot) * 1000));
+                            listaValori.Add(Math.Round((nati / tot) * 1000, 2));
                         }
                         break;
                     }
@@ -300,7 +300,7 @@ namespace csvReading
                         {
                             double morti = w.Morti;
                             double tot = w.PopolazioneMedia;
-                            listaValori.Add(Math.Round((morti / tot) * 1000));
+                            listaValori.Add(Math.Round((morti / tot) * 1000,2));
                         } 
                         break;
                     }

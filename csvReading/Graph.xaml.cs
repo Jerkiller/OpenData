@@ -197,10 +197,6 @@ namespace csvReading
             MessageBox.Show(debug);
             */
 
-            
-
-            //Imposta un colore a caso al grafico
-            SetRandomColor();
 
             //imposta titolo pagina
             PageTitle.Text = comune.Comune;
@@ -268,7 +264,6 @@ namespace csvReading
             {
                 //Calcolo ascisse
                 coordX = larghezzaGriglia * w;
-
                 //Calcolo ordinate
                 double invertito = (Dvalori[w] - DMin()) * altezzaCanvas / range;
                 coordY = altezzaCanvas - invertito * 0.9;
@@ -302,10 +297,11 @@ namespace csvReading
                 myVerticalGradient.GradientStops.Add(b);
 
                 Caneva.Background = myVerticalGradient;
+                SetRandomColorLight();
             }
             else
             {
-                
+                SetRandomColorDark();
             }
         }
 
@@ -402,24 +398,40 @@ namespace csvReading
         }
 
 
-        public void SetRandomColor()
+        public void SetRandomColorDark()
         {
             Random generator = new Random();
             int num=generator.Next(0,9);
             switch(num)
             {
+                case (0): { Grafico.Stroke = new SolidColorBrush(Colors.White); break; }
+                case (1): { Grafico.Stroke = new SolidColorBrush(Colors.Red); break; }
+                case (2): { Grafico.Stroke = new SolidColorBrush(Colors.Green); break; }
+                case (3): { Grafico.Stroke = new SolidColorBrush(Colors.Purple); break; }
+                case (4): { Grafico.Stroke = new SolidColorBrush(Colors.Yellow); break; }
+                case (5): { Grafico.Stroke = new SolidColorBrush(Colors.Orange); break; }
+                case (6): { Grafico.Stroke = new SolidColorBrush(Colors.Magenta); break; }
+                case (7): { Grafico.Stroke = new SolidColorBrush(Colors.Cyan); break; }
+                case (8): { Grafico.Stroke = new SolidColorBrush(Colors.Gray); break; }
+                default: { Grafico.Stroke = new SolidColorBrush(Colors.White); break; }
+            
+            }
+        }
+
+        public void SetRandomColorLight()
+        {
+            Random generator = new Random();
+            int num = generator.Next(0, 6);
+            switch (num)
+            {
                 case (0): { Grafico.Stroke = new SolidColorBrush(Colors.Blue); break; }
                 case (1): { Grafico.Stroke = new SolidColorBrush(Colors.Red); break; }
                 case (2): { Grafico.Stroke = new SolidColorBrush(Colors.Green); break; }
-                case (3): { Grafico.Stroke = new SolidColorBrush(Colors.White); break; }
-                case (4): { Grafico.Stroke = new SolidColorBrush(Colors.Yellow); break; }
-                case (5): { Grafico.Stroke = new SolidColorBrush(Colors.Purple); break; }
-                case (6): { Grafico.Stroke = new SolidColorBrush(Colors.Orange); break; }
-                case (7): { Grafico.Stroke = new SolidColorBrush(Colors.Magenta); break; }
-                case (8): { Grafico.Stroke = new SolidColorBrush(Colors.Cyan); break; }
-                case (9): { Grafico.Stroke = new SolidColorBrush(Colors.Gray); break; }
+                case (3): { Grafico.Stroke = new SolidColorBrush(Colors.Purple); break; }
+                case (4): { Grafico.Stroke = new SolidColorBrush(Colors.Orange); break; }
+                case (5): { Grafico.Stroke = new SolidColorBrush(Colors.Magenta); break; }
                 default: { Grafico.Stroke = new SolidColorBrush(Colors.Blue); break; }
-            
+
             }
         }
 

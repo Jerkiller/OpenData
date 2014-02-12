@@ -4,6 +4,8 @@ using Microsoft.Phone.Controls;
 using System.Collections.Generic;
 using System.Windows.Media;
 using System.Windows.Navigation;
+using System.Windows.Controls;
+using System.Windows.Shapes;
 
 namespace csvReading
 {
@@ -29,53 +31,12 @@ namespace csvReading
             Rovigo.Fill = the_void;
         }
 
-        private void Button1_Click(object sender, RoutedEventArgs e)
+        private void VaiAProvincia(object sender, RoutedEventArgs e)
         {
-            Verona.Fill = selezionato;
+            ((Path)sender).Fill = selezionato;
+            string prov = ((Path)sender).Tag.ToString();
                 //gestisco via get che comune visualizzare
-            NavigationService.Navigate(new Uri("/ListaComuni.xaml?prov=vr",UriKind.Relative));
-        }
-
-        private void Button2_Click(object sender, RoutedEventArgs e)
-        {
-            Vicenza.Fill = selezionato;
-            //gestisco via get che comune visualizzare
-            NavigationService.Navigate(new Uri("/ListaComuni.xaml?prov=vi", UriKind.Relative));
-        }
-
-        private void Button3_Click(object sender, RoutedEventArgs e)
-        {
-            Rovigo.Fill = selezionato;
-            //gestisco via get che comune visualizzare
-            NavigationService.Navigate(new Uri("/ListaComuni.xaml?prov=ro", UriKind.Relative));
-        }
-
-        private void Button4_Click(object sender, RoutedEventArgs e)
-        {
-            Belluno.Fill = selezionato;
-            //gestisco via get che comune visualizzare
-            NavigationService.Navigate(new Uri("/ListaComuni.xaml?prov=bl", UriKind.Relative));
-        }
-
-        private void Button5_Click(object sender, RoutedEventArgs e)
-        {
-            Treviso.Fill = selezionato;
-            //gestisco via get che comune visualizzare
-            NavigationService.Navigate(new Uri("/ListaComuni.xaml?prov=tv", UriKind.Relative));
-        }
-
-        private void Button6_Click(object sender, RoutedEventArgs e)
-        {
-            Padova.Fill = selezionato;
-            //gestisco via get che comune visualizzare
-            NavigationService.Navigate(new Uri("/ListaComuni.xaml?prov=pd", UriKind.Relative));
-        }
-
-        private void Button7_Click(object sender, RoutedEventArgs e)
-        {
-            Venezia.Fill = selezionato;
-            //gestisco via get che comune visualizzare
-            NavigationService.Navigate(new Uri("/ListaComuni.xaml?prov=ve", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ListaComuni.xaml?prov="+prov,UriKind.Relative));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

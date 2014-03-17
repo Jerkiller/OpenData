@@ -29,69 +29,31 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <ScrollViewer VerticalScrollBarVisibility ="Hidden" HorizontalScrollBarVisibility="Disabled">
-                <Grid Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <Image Name="Img" Grid.Row="0" Source="/Images/open_data.png" />
-                    <TextBlock Name="Testo" Grid.Row="1" Margin="0,-70,0,0">
-                		<Run FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="40" Text="Open Data"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="Gli  &quot;Open Data&quot;  sono tutti quei dati"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="resi   pubblici   da   un   ente   senza"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="restrizioni  di  copyright  o  licenze. "/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="Sono  utilizzabili   ed   accessibili   da"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="chiunque, questo archivio anagrafico"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="proviene dal sito &quot;dati.veneto.it&quot;."/>
-                		<LineBreak/>
-                		<LineBreak/>
-                		<Run FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="40" Text="Open Veneto"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="Questa app nasce senz alcuno scopo"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="di    lucro,    è    perciò    esente    da"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="pubblicità   ed   è  gratuita.   È   stata"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="sviluppata  da   Luca  Favorido   (del"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="gruppo   &quot;No1&quot;)    nell' ambito    del"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="progetto di Ingegneria del Software"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="(uno  dei  corsi  tenuti  dal  docente"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="Agostino  Cortesi)  dell'Università  di"/>
-                		<LineBreak/>
-                		<Run FontSize="28" Text="Ca' Foscari."/>
-                		<LineBreak/>
-                    	<Run FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="40" Text="Dati"/>
-                    	<LineBreak/>
-                    	<Run FontSize="28" Text="I dati qui presenti, vengono espressi,"/>
-                    	<LineBreak/>
-                    	<Run FontSize="28" Text="anche in forma grafica  e  rielaborati"/>
-                    	<LineBreak/>
-                        <Run FontSize="28" Text="come avviene per:"/>
-                    	<LineBreak/>
-                    	<Run FontSize="28" Foreground="#FF3EAAE8" Text="Tasso di Natalità  " />
-                    	<Run FontSize="28" Text=" -  indica il numero"/>
-                    	<LineBreak/>
-                    	<Run FontSize="28" Text="medio di nati ogni 1000 abitanti."/>
-                    	<LineBreak/>
-                    	<Run FontSize="28" Foreground="#FF3EAAE8" Text="Tasso di Mortalità "/>
-                    	<Run FontSize="28" Text=" - indica il numero"/>
-                    	<LineBreak/>
-                    	<Run FontSize="28" Text="medio di morti ogni 1000 abitanti."/>
-                    </TextBlock>
-                </Grid>
+                <StackPanel>
+                    <Image Name="Img" Grid.Row="0" Source="/Images/open_data.png" Margin="0 0 0 -50" />
+                    <RichTextBox TextAlignment="Justify" IsReadOnly="True">
+                        <Paragraph FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="40">Open Data</Paragraph>
+                        <Paragraph FontSize="24">Gli "Open Data" sono tutti quei dati resi pubblici da un ente senza restrizioni di copyright o licenze. Sono utilizzabili ed accessibili da chiunque, questo archivio anagrafico proviene dal sito
+                            <Hyperlink NavigateUri="http://dati.veneto.it" TargetName="_blank">dati.veneto.it</Hyperlink> .
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="40">Open Veneto</Paragraph>
+                        <Paragraph FontSize="24">Questa app nasce senza scopi di lucro, è perciò esente da pubblicità ed è gratuita. È stata sviluppata dal gruppo "No1" (Luca Favorido, Stefano Sandonà, Francesco Pelosin, Alessandro Brusò) nell'ambito del progetto di Ingegneria del Software (uno dei corsi tenuti dal docente Agostino Cortesi) dell'Università Ca' Foscari di Venezia nell'A.A. 2013/2014.</Paragraph>
+                        <Paragraph FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="40">Dati</Paragraph>
+                        <Paragraph FontSize="24">I dati qui presenti, vengono espressi, anche in forma grafica e rielaborati come avviene per:
+                            <LineBreak />
+                            <InlineUIContainer >
+                                <TextBlock FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="28" Text="Tasso di natalità" />
+                            </InlineUIContainer>
+                            - indica il numero medio di nati ogni 1000 abitanti.
+                            <LineBreak />
+                            <InlineUIContainer >
+                                <TextBlock FontWeight="Bold" Foreground="#FF3EAAE8" FontSize="28" Text="Tasso di mortalità" />
+                            </InlineUIContainer> - indica il numero medio di morti ogni 1000 abitanti.
+                            <LineBreak />In ogni caso è da far fede ai dataset di dati.veneto.it per l'attendibilità.
+                        </Paragraph>
+                    </RichTextBox>
+                </StackPanel>
             </ScrollViewer>
-
         </Grid>
     </Grid>
 

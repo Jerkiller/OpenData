@@ -25,12 +25,13 @@ namespace csvReading
             {
                 //MessageBox.Show("tema biango");
                 Img.Source = new BitmapImage(new Uri("/Images/opendata.png", UriKind.Relative));
-                Testo.Margin = new Thickness(0,0,-20,0);
+                Img.Margin = new Thickness(0,0,0,-20);
             }
             else
             {
                 //MessageBox.Show("tema negro");
                 Img.Source = new BitmapImage(new Uri("/Images/open_data.png", UriKind.Relative));
+                Img.Margin = new Thickness(0, 0, 0, -50);
             }
         }
     }

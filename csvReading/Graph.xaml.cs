@@ -1,4 +1,5 @@
-﻿using Microsoft.Phone.Controls;
+﻿using csvReading.Model;
+using Microsoft.Phone.Controls;
 using System;
 using System.Collections.Generic;
 using System.Windows;
@@ -149,7 +150,6 @@ namespace csvReading
 
         int idComune;
         Record comune = null;
-        CsvReader csv = CsvReader.Instance;
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -159,7 +159,7 @@ namespace csvReading
             if (NavigationContext.QueryString.TryGetValue("comune", out codice))
             {
                 idComune = Int32.Parse(codice);
-                comune = csv.LoadLastData(idComune);
+                comune = CsvReader.Instance.LoadLastData(idComune);
             }
             else { MessageBox.Show("Errore nel caricamento dei dati del grafico selezionato"); }
 
@@ -212,14 +212,14 @@ namespace csvReading
 
         public void LoadDoubleData()
         {
-            Dvalori = csv.LoadDoubleDati(idComune, tipoDato)[0];
-            Danni = csv.LoadDoubleDati(idComune, tipoDato)[1];
+            Dvalori = CsvReader.Instance.LoadDoubleDati(idComune, tipoDato)[0];
+            Danni = CsvReader.Instance.LoadDoubleDati(idComune, tipoDato)[1];
         }
 
         public void LoadData()
         {
-            valori = csv.LoadDati(idComune, tipoDato)[0];
-            anni = csv.LoadDati(idComune, tipoDato)[1];
+            valori = CsvReader.Instance.LoadDati(idComune, tipoDato)[0];
+            anni = CsvReader.Instance.LoadDati(idComune, tipoDato)[1];
         }
 
 

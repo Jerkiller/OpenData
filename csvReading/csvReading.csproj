@@ -65,7 +65,7 @@
     <Compile Include="City.xaml.cs">
       <DependentUpon>City.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CsvReader.cs" />
+    <Compile Include="Model\CsvReader.cs" />
     <Compile Include="Graph.xaml.cs">
       <DependentUpon>Graph.xaml</DependentUpon>
     </Compile>
@@ -78,10 +78,13 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Comune.cs" />
+    <Compile Include="Model\DelegateCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Record.cs" />
     <Compile Include="ViewModel\ComuneVM.cs" />
     <Compile Include="ViewModel\ComuniVM.cs" />
+    <Compile Include="ViewModel\GraphVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

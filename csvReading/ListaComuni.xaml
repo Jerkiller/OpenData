@@ -23,19 +23,19 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="Open Veneto" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Name="Provincia" Text="Provincia" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Name="Provincia" Text="{Binding Prov}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <ListBox Name="MainListBox" Margin="10" ItemsSource="{Binding Items}" SelectionChanged="MainListBox_SelectionChanged">
+            <ListBox Name="MainListBox" Margin="10" ItemsSource="{Binding Comuni}" SelectedItem="{Binding Attuale, Mode=TwoWay}">
 
 
                 <ListBox.ItemTemplate>
 
                     <DataTemplate>
                         <StackPanel Margin="0,0,0,17" Width="432" Height="48">
-                            <TextBlock Text="{Binding LineOne}" Tag="{Binding LineTwo}" TextWrapping="Wrap" FontSize="30"/>
+                            <TextBlock Text="{Binding Nome}" TextWrapping="Wrap" FontSize="30"/>
                         </StackPanel>
 
                         <!-- <Button Content="Comuno" Tag="24011" BorderBrush="{x:Null}" Background="{x:Null}" Width="436" FontSize="20" FontFamily="Segoe WP Light" Click="Button_Click" />

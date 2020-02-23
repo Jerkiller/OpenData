@@ -22,13 +22,11 @@ namespace csvReading
         {
             get
             {
-                // Delay creation of the view model until necessary
-                if (viewModel == null)
-                    viewModel = new ComuniVM();
-
                 return viewModel;
             }
         }
+
+
 
 
         /// <summary>
@@ -77,6 +75,7 @@ namespace csvReading
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
+            viewModel = new ComuniVM();
         }
 
         // Code to execute when the application is activated (brought to foreground)
